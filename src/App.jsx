@@ -12,15 +12,15 @@ import MapCurrentTarget from "./components/map/MapCurrentTarget";
 const App = () => {
   return (
     <div className="bg-slate-900 h-full min-h-screen">
-      <FilledButton text="Filled Button">Filled Button</FilledButton>
-      <BorderButton text="Border Button">Border Button</BorderButton>
+      <FilledButton>Filled Button</FilledButton>
+      <BorderButton>Border Button</BorderButton>
       <LoginFacebook/>
       <LoginGoogle/>
       <TextField/>
       <BrowserRouter>
       <StarRating/>
-      <MapCurrentPoint/>
-      <MapCurrentTarget/>
+      <MapCurrentPoint top="300px"/>
+      <MapCurrentTarget  top="400px"/>
         {/* <AuthProvider> */}
           <Routes>
             {/* <Route path="/auth" element={<Authentication />} />
