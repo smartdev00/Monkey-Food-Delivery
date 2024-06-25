@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ButtonShow from "./pages/ButtonShow";
 import IconsRef from "./components/Icons/IconsRef";
 
 const App = () => {
@@ -7,7 +8,8 @@ const App = () => {
       <BrowserRouter>
         {/* <AuthProvider> */}
           <Routes>
-            <Route path="/icon" element={<IconsRef />} />
+          <Route path="/button" element={<ButtonShow />} />
+          <Route path="/icon" element={<IconsRef />} />
             {/* <Route path="/auth" element={<Authentication />} />
             <Route path="/" element={<Home />} />
             <Route path="/create-post" element={<CreatePost />} />
