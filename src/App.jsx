@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import Menu from './pages/Menu'
 import Profile from './pages/Profile'
 import Offers from './pages/Offers'
-
 import More from './pages/More'
 
 const App = () => {
