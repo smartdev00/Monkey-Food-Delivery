@@ -1,28 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import FilledButton from './components/Buttons/FilledButton'
-import BorderButton from './components/Buttons/BorderButton'
-import LoginFacebook from "./components/Buttons/LoginFacebook";
-import LoginGoogle from "./components/Buttons/LoginGoogle";
-import TextField from "./components/TextField/TextField";
-import './output.css'
-import StarRating from "./components/StarRating";
-import MapCurrentPoint from "./components/map/MapCurrentPoint";
-import MapCurrentTarget from "./components/map/MapCurrentTarget";
+import Basket from "./components/Icons/Basket";
+import ButtonShow from "./pages/ButtonShow";
 
 const App = () => {
   return (
     <div className="bg-slate-900 h-full min-h-screen">
-      <FilledButton>Filled Button</FilledButton>
-      <BorderButton>Border Button</BorderButton>
-      <LoginFacebook/>
-      <LoginGoogle/>
-      <TextField/>
       <BrowserRouter>
-      <StarRating/>
-      <MapCurrentPoint top="300px"/>
-      <MapCurrentTarget  top="400px"/>
         {/* <AuthProvider> */}
           <Routes>
+            <Route path="/icon" element={<Basket />} />
+            <Route path="/button" element={<ButtonShow />} />
             {/* <Route path="/auth" element={<Authentication />} />
             <Route path="/" element={<Home />} />
             <Route path="/create-post" element={<CreatePost />} />

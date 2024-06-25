@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types'
 import StarFill from '../../public/assets/img/star-fill.svg'
 import StarOutline from '../../public/assets/img/star-outline.svg'
 
@@ -20,6 +21,11 @@ const StarRating = (props) => {
             <img src={ value === 5 ? StarFill : StarOutline } className='h-[15px]' onClick={() => handleChange(5)}/>
         </div>
     );
+}
+
+StarRating.proTypes = {
+    value: PropTypes.number,
+    setValue: PropTypes.func
 }
 
 export default StarRating;
