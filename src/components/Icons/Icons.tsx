@@ -23,8 +23,8 @@ export default function Icons({type, color}: Icon){
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="16.828" height="9.828" viewBox="0 0 16.828 9.828" className={color === "gray"?'stroke-icongray-200':'stroke-iconorange-50'}>
             <g id="Group_6869" data-name="Group 6869" transform="translate(1.414 8.414) rotate(-90)">
-              <line id="Line_12" data-name="Line 12" x1="7" y2="7" transform="translate(0 0)"   stroke-linecap="round" stroke-width="2"/>
-              <line id="Line_13" data-name="Line 13" x1="7" y1="7" transform="translate(0 7)"   stroke-linecap="round" stroke-width="2"/>
+              <line id="Line_12" data-name="Line 12" x1="7" y2="7" transform="translate(0 0)"   strokeLinecap="round" strokeWidth="2"/>
+              <line id="Line_13" data-name="Line 13" x1="7" y1="7" transform="translate(0 7)"   strokeLinecap="round" strokeWidth="2"/>
             </g>
           </svg>
         </span>
@@ -35,8 +35,8 @@ export default function Icons({type, color}: Icon){
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="9.828" height="16.828" viewBox="0 0 9.828 16.828" className={color === "gray"?'stroke-icongray-200':'stroke-iconorange-50'}>
             <g id="Group_8181" data-name="Group 8181" transform="translate(8.414 15.414) rotate(180)">
-              <line id="Line_12" data-name="Line 12" x1="7" y2="7" transform="translate(0 0)"   stroke-linecap="round" stroke-width="2"/>
-              <line id="Line_13" data-name="Line 13" x1="7" y1="7" transform="translate(0 7)"   stroke-linecap="round" stroke-width="2"/>
+              <line id="Line_12" data-name="Line 12" x1="7" y2="7" transform="translate(0 0)"   strokeLinecap="round" strokeWidth="2"/>
+              <line id="Line_13" data-name="Line 13" x1="7" y1="7" transform="translate(0 7)"   strokeLinecap="round" strokeWidth="2"/>
             </g>
           </svg>
         </span>
@@ -47,11 +47,11 @@ export default function Icons({type, color}: Icon){
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="19.914" height="19.914" viewBox="0 0 19.914 19.914" className={color === "gray"?'stroke-icongray-100':'stroke-iconorange-100'}>
             <g id="Group_6821" data-name="Group 6821" transform="translate(-13 -13)">
-              <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(13 13)" className={`fill-none ${color === "gray"?'stroke-icongray-100':'stroke-iconorange-100'}`} stroke-width="2">
+              <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(13 13)" className={`fill-none ${color === "gray"?'stroke-icongray-100':'stroke-iconorange-100'}`} strokeWidth="2">
                 <circle cx="8.5" cy="8.5" r="8.5" className='stroke-none'/>
                 <circle cx="8.5" cy="8.5" r="7.5" className='fill-none' />
               </g>
-              <line id="Line_3" data-name="Line 3" x2="4" y2="4" transform="translate(27.5 27.5)" className={`fill-none ${color === "gray"?'stroke-icongray-100':'stroke-iconorange-100'}`}  stroke-linecap="round" stroke-width="2"/>
+              <line id="Line_3" data-name="Line 3" x2="4" y2="4" transform="translate(27.5 27.5)" className={`fill-none ${color === "gray"?'stroke-icongray-100':'stroke-iconorange-100'}`}  strokeLinecap="round" strokeWidth="2"/>
             </g>
           </svg>
         </span>
@@ -70,7 +70,7 @@ export default function Icons({type, color}: Icon){
       content = (
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="14.084" height="13.535" viewBox="0 0 14.084 13.535"  >
-            <path id="star" d="M13.025,5.225a.693.693,0,0,0-.6-.477l-3.77-.342L7.168.918a.694.694,0,0,0-1.277,0L4.4,4.406.631,4.748A.7.7,0,0,0,.236,5.963l2.85,2.5-.84,3.7a.694.694,0,0,0,1.033.751L6.53,10.969l3.25,1.944a.695.695,0,0,0,1.033-.751l-.84-3.7,2.85-2.5a.7.7,0,0,0,.2-.738ZM6.592,10.932" transform="translate(0.513 0.004)" className={`fill-none ${color === "gray"?'stroke-icongray-50':'stroke-iconorange-100'}`} stroke-width="1"/>
+            <path id="star" d="M13.025,5.225a.693.693,0,0,0-.6-.477l-3.77-.342L7.168.918a.694.694,0,0,0-1.277,0L4.4,4.406.631,4.748A.7.7,0,0,0,.236,5.963l2.85,2.5-.84,3.7a.694.694,0,0,0,1.033.751L6.53,10.969l3.25,1.944a.695.695,0,0,0,1.033-.751l-.84-3.7,2.85-2.5a.7.7,0,0,0,.2-.738ZM6.592,10.932" transform="translate(0.513 0.004)" className={`fill-none ${color === "gray"?'stroke-icongray-50':'stroke-iconorange-100'}`} strokeWidth="1"/>
           </svg>
         </span>
       );
@@ -79,7 +79,7 @@ export default function Icons({type, color}: Icon){
       content = (
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="20.112" height="16.717" viewBox="0 0 20.112 16.717" >
-            <path id="Path_8609" data-name="Path 8609" d="M13.913,35.525a5.224,5.224,0,0,1,5.2,5.2c0,5.249-9.556,10.448-9.556,10.448S0,45.9,0,40.723a5.2,5.2,0,0,1,5.2-5.2h0a5.147,5.147,0,0,1,4.357,2.344A5.2,5.2,0,0,1,13.913,35.525Z" className={color === "gray"?'stroke-icongray-50 fill-icongray-50':'stroke-iconorange-50 fill-iconorange-50'} transform="translate(0.5 -35.025)"  stroke-width="1"/>
+            <path id="Path_8609" data-name="Path 8609" d="M13.913,35.525a5.224,5.224,0,0,1,5.2,5.2c0,5.249-9.556,10.448-9.556,10.448S0,45.9,0,40.723a5.2,5.2,0,0,1,5.2-5.2h0a5.147,5.147,0,0,1,4.357,2.344A5.2,5.2,0,0,1,13.913,35.525Z" className={color === "gray"?'stroke-icongray-50 fill-icongray-50':'stroke-iconorange-50 fill-iconorange-50'} transform="translate(0.5 -35.025)"  strokeWidth="1"/>
           </svg>
         </span>
         
@@ -89,7 +89,7 @@ export default function Icons({type, color}: Icon){
       content = (
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="20.112" height="16.717" viewBox="0 0 20.112 16.717" className={color === "gray"?'stroke-icongray-50 fill-none':'stroke-iconorange-50 fill-none'}>
-            <path id="Path_10234" data-name="Path 10234" d="M13.913,35.525a5.224,5.224,0,0,1,5.2,5.2c0,5.249-9.556,10.448-9.556,10.448S0,45.9,0,40.723a5.2,5.2,0,0,1,5.2-5.2h0a5.147,5.147,0,0,1,4.357,2.344A5.2,5.2,0,0,1,13.913,35.525Z" transform="translate(0.5 -35.025)"  stroke-width="1"/>
+            <path id="Path_10234" data-name="Path 10234" d="M13.913,35.525a5.224,5.224,0,0,1,5.2,5.2c0,5.249-9.556,10.448-9.556,10.448S0,45.9,0,40.723a5.2,5.2,0,0,1,5.2-5.2h0a5.147,5.147,0,0,1,4.357,2.344A5.2,5.2,0,0,1,13.913,35.525Z" transform="translate(0.5 -35.025)"  strokeWidth="1"/>
           </svg>
         </span>
       );
