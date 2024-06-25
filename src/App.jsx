@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Basket from "./components/Icons/Basket";
+import ButtonShow from "./pages/ButtonShow";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
         {/* <AuthProvider> */}
           <Routes>
             <Route path="/icon" element={<Basket />} />
+            <Route path="/button" element={<ButtonShow />} />
             {/* <Route path="/auth" element={<Authentication />} />
             <Route path="/" element={<Home />} />
             <Route path="/create-post" element={<CreatePost />} />
