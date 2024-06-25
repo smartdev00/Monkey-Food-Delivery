@@ -5,6 +5,9 @@ import LoginFacebook from "./components/Buttons/LoginFacebook";
 import LoginGoogle from "./components/Buttons/LoginGoogle";
 import TextField from "./components/TextField/TextField";
 import './output.css'
+import StarRating from "./components/StarRating";
+import MapCurrentPoint from "./components/map/MapCurrentPoint";
+import MapCurrentTarget from "./components/map/MapCurrentTarget";
 
 const App = () => {
   return (
@@ -15,6 +18,9 @@ const App = () => {
       <LoginGoogle/>
       <TextField/>
       <BrowserRouter>
+      <StarRating/>
+      <MapCurrentPoint/>
+      <MapCurrentTarget/>
         {/* <AuthProvider> */}
           <Routes>
             {/* <Route path="/auth" element={<Authentication />} />
