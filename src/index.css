@@ -16,5 +16,10 @@
   background-color: #ffffff50;
 }
 .downImg{
-  background-image: url(../public/assets/img/down.png);   
+  background-image: url(../public/assets/img/down.svg); 
+    
+}
+.downSvg{
+  background-image: url(../public/assets/img/back.svg);   
+   
 }

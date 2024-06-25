@@ -11,29 +11,30 @@ import footerBottom from '../../public/assets/img/footerBottom.png'
 
 const Footer = () => {
 
-  return (
-    <>
-      <footer className="fixed  blue-sm  bottom-0  ">
-        <div className=" box-shadow items-stretch w-[35rem] h-[9rem] pt-8  bg-bottom  bg-cover  bg-no-repeat  downImg   " >
-          <div className="flex px-14 gap-12">
-            <Link to='/Menu'><Icon className='h-full' label="Menu" image={menuImage} /> </Link>
-            <Link to='/Offers'><Icon label="Offers" image={offersImage} /> </Link>
-            <div className="flex justify-center pt-18 " style={{ position: 'relative', bottom: '60px' }}>
-              <Link to='/Home'><img className="w-48 " src={Home} alt=' to Home' /></Link>
-            </div>
+    return (
+        <>
+            <footer className="fixed  bottom-0 w-[33rem]  pt-4   bg-bottom  bg-cover  bg-no-repeat  downSvg  ">
+                <div className="  w-[33rem]    bg-bottom  bg-cover  bg-no-repeat  downImg   " >
 
-            <Link to='/Profile'><Icon label="Profile" image={profileImage} /> </Link>
-            <Link to='/More'><Icon label="More" image={moreImage} /> </Link>
-          </div>
+                    <div className="flex items-center px-10  gap-10 ">
+                        <Link to='/Menu'><Icon className='self-center ' label="Menu" image={menuImage} /> </Link>
+                        <Link to='/Offers'><Icon label="Offers" image={offersImage} /> </Link>
+                        <div className="flex justify-center " style={{ position: 'relative', bottom: '60px' }}>
+                            <Link to='/Home'><img className="w-48 " src={Home} alt=' to Home' /></Link>
+                        </div>
 
-          <div className="flex  justify-center ">
-            <img className="w-32 " src={footerBottom} />
-          </div>
-        </div>
+                        <Link to='/Profile'><Icon label="Profile" image={profileImage} /> </Link>
+                        <Link to='/More'><Icon label="More" image={moreImage} /> </Link>
+                    </div>
 
-      </footer>
-    </>
-  );
+                    <div className="flex  justify-center ">
+                        <img className="w-[12rem] " src={footerBottom} />
+                    </div>
+                </div>
+
+            </footer>
+        </>
+    );
 };
 
 export default Footer;

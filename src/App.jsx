@@ -10,7 +10,7 @@ import More from './pages/More'
 const App = () => {
   return (
     // <div className="bg-sky-900 h-full min-h-screen">
-    <div className="container bg-sky-400 min-h-screen">
+    <div className="container bg-gray-200 min-h-screen">
       <BrowserRouter>
 
           <Routes>
