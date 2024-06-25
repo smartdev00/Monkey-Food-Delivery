@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Basket from "./components/Icons/Basket";
 
 const App = () => {
   return (
@@ -6,6 +7,7 @@ const App = () => {
       <BrowserRouter>
         {/* <AuthProvider> */}
           <Routes>
+            <Route path="/icon" element={<Basket />} />
             {/* <Route path="/auth" element={<Authentication />} />
             <Route path="/" element={<Home />} />
             <Route path="/create-post" element={<CreatePost />} />
