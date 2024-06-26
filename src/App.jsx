@@ -11,7 +11,8 @@ import Land from "./pages/Land";
 import Home from "./pages/Home";
 import Menu from './pages/Menu'
 import Offers from './pages/Offers'
-import More from './pages/More'
+import More from './pages/More/More'
+import PaymentDetails from "./pages/More/PaymentDetails/PaymentDetails";
 import SignUp from "./pages/auth/SignUp";
 import Login from "./pages/auth/Login";
 import ResetPassword from "./pages/auth/ResetPassword";
@@ -20,8 +21,8 @@ import NewPassword from "./pages/auth/NewPassword";
 import Intro from "./pages/Intro/Intro";
 const App = () => {
   return (
-    <div className="container bg-gray-100 min-h-screen">
-    <div className="container bg-white min-h-screen">
+    <div className="bg-[#999999] min-h-screen flex items-center">
+    <div className="container bg-white h-auto">
       <StatusBar/>
       <BrowserRouter>
         <Routes>
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/Land" element={<Land />} />
           <Route path="/Menu" element={<Menu />} />
           <Route path="/More" element={<More />} />
+          <Route path="/more/payment-details" element={<PaymentDetails />} />
           <Route path="/Offers" element={<Offers />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/signup" element={<SignUp />} />
