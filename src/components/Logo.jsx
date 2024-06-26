@@ -4,7 +4,7 @@ const Logo = () => {
 
     return (
         <>
-            <div className='  flex-col border border-red-400 '>
+            <div className='  flex-col border border-red-400 ' style={{backgroundImage: 'url(../../../public/assets/backImage.png)'}}>
                 <div className=' flex justify-center  '>
                     <img className="bg-center" src={logoImage} />
                 </div>
