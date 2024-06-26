@@ -26,8 +26,7 @@ import MyOrder from "./pages/More/Order/MyOrder";
 import Checkout from "./pages/More/Order/Checkout";
 const App = () => {
   return (
-    <div className="bg-[#999999] min-h-screen flex items-center">
-    <div className="container bg-white h-auto">
+    <div className="w-[100%] bg-white h-auto">
       <StatusBar/>
       <BrowserRouter>
         <Routes>
@@ -37,7 +36,7 @@ const App = () => {
           <Route path="/Land" element={<Land />} />
           <Route path="/Menu" element={<Menu />} />
           <Route path="/More" element={<More />} />
-          <Route path="/more/payment-details" element={<PaymentDetails />} />
+          <Route path="/payment-details" element={<PaymentDetails />} />
           <Route path="/Offers" element={<Offers />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/signup" element={<SignUp />} />
@@ -58,7 +57,6 @@ const App = () => {
           </Routes>
         {/* </AuthProvider> */}
       </BrowserRouter>
-    </div>
     </div>
   );
 };

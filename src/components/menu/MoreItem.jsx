@@ -1,11 +1,12 @@
 import React from 'react'
 import Icons from '../Icons/Icons'
+import { useNavigate } from 'react-router';
 
 
-export default function MoreItem({children, iconType, iconColor}) {
-  
+export default function MoreItem({children, iconType, iconColor, linkTo}) {
+  const navigate = useNavigate();
   return (
-    <div className='flex justify-stretch p-0 m-0 bg-inherit w-full h-75px relative'>
+    <div className='flex justify-stretch p-0 m-0 bg-inherit w-full h-75px relative cursor-pointer' onClick={()=>navigate(linkTo)}>
       <div className='flex justify-start items-center basis-full bg-pageback-50 mr-16px w-full rounded-7px pl-[13px] pt-[13px] pb-[9px] gap-[18px]'>
         <div className='flex justify-center basis-[53px] h-53px items-center bg-pageback-100 rounded-[999px]'> 
           <Icons type={iconType} color={iconColor} /> 
