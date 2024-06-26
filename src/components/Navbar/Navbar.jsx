@@ -1,4 +1,4 @@
-import Basket from "../Icons/Basket";
+// import Basket from "../Icons/Basket";
 
 const Navbar = (props) => {
     return (

@@ -2,9 +2,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ButtonShow from "./pages/ButtonShow";
 import IconsRef from "./components/Icons/IconsRef";
-import Navbar from "./components/Navbar/Navbar";
-import Profile from "./pages/Profile";
+ 
+import StatusBar from './components/Navbar/StatusBar'
 
+import Land from "./pages/Land";
 import Home from "./pages/Home";
 import Menu from './pages/Menu'
 import Profile from './pages/Profile'
@@ -12,13 +13,14 @@ import Offers from './pages/Offers'
 import More from './pages/More'
 const App = () => {
   return (
-    <div className="container bg-slate-100 min-h-screen">
+    <div className="container bg-gray-100 min-h-screen">
       <StatusBar/>
       <BrowserRouter>
         <Routes>
           <Route path="/button" element={<ButtonShow />} />
           <Route path="/icon" element={<IconsRef />} />
           <Route path="/" element={<Home />} />
+          <Route path="/Land" element={<Land />} />
           <Route path="/Menu" element={<Menu />} />
           <Route path="/More" element={<More />} />
           <Route path="/Profile" element={<Profile />} />

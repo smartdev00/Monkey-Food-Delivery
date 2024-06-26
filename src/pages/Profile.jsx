@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import avatar from '../../public/assets/img/profile-avatar.png'
-import Basket from '../components/Icons/Basket';
+// import Basket from '../components/Icons/Basket';
 import TextField from '../components/TextField/TextField';
 
 const Profile = () => {

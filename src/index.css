@@ -15,10 +15,20 @@
 .scrollBar:hover::-webkit-scrollbar-track-piece {
   background-color: #ffffff50;
 }
-.downImg{
-  background-image: url(../public/assets/img/down.svg); 
-    
+
+.downImg {
+  background-image: url(../public/assets/img/down.svg);
 }
-.downSvg{
-  background-image: url(../public/assets/img/back.svg);     
+.downImg1 {
+    background-image: url(../public/assets/img/down1.svg);
+    opacity: .8;
+
 }
+
+  .backShadow {
+    background-image: url(../public/assets/img/back.svg);
+  }
+
+  .upSvg {
+    background-image: url(../public/assets/img/upback.svg);
+  }
