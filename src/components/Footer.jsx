@@ -18,10 +18,10 @@ const Footer = ({ }) => {
 
                 <div className="pt-[10px]  bg-contain bg-no-repeat  downImg1 " >
                 
-                    <div className=" w-[375px] h-[92px] pt-[16px] bg-bottom  bg-cover  bg-no-repeat downImg      " >
+                    <div className=" w-[375px] h-[92px] pt-[22px] bg-bottom  bg-cover  bg-no-repeat downImg      " >
 
-                        <div className="flex items-center px-18 gap-10 ">
-                            <Link to='/Menu'><Icon label="Menu" image={menuImage} /> </Link>
+                        <div className="flex items-end px-[2px] gap-10 ">
+                            <Link to='/Menu'><Icon className='  self-center' label="Menu" image={menuImage} /> </Link>
                             <Link to='/Offers'><Icon label="Offers" image={offersImage} /> </Link>
                             <div className="flex justify-center" style={{ position: 'relative', bottom: '30px' }}>
                                 <Link to='/Home'><img className="  " src={Home} alt=' to Home' /></Link>
