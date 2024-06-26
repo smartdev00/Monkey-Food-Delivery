@@ -8,8 +8,8 @@ import Footer from '../../components/Footer';
 
 const Profile = () => {
     return (
-        <div>
-            <div className='p-[21px]'>
+        <div className='relative h-[996px]'>
+            <div className='px-[21px]'>
                 <Navbar text="Profile"/>
                 <div className='flex flex-col justify-center items-center mb-[47px] mt-[30px]'>
                     <img src={avatar}/>

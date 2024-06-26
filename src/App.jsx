@@ -19,6 +19,11 @@ import ResetPassword from "./pages/auth/ResetPassword";
 import OTP from "./pages/auth/OTP";
 import NewPassword from "./pages/auth/NewPassword";
 import Intro from "./pages/Intro/Intro";
+import Notification from "./pages/More/Notification";
+import AboutUs from "./pages/More/AboutUs";
+import Inbox from "./pages/More/Inbox";
+import MyOrder from "./pages/More/Order/MyOrder";
+import Checkout from "./pages/More/Order/Checkout";
 const App = () => {
   return (
     <div className="w-[100%] bg-white h-auto">
@@ -40,6 +45,11 @@ const App = () => {
           <Route path="/otp" element={<OTP />} />
           <Route path="/newpassword" element={<NewPassword />} />
           <Route path="/intro" element={<Intro />} />
+          <Route path="/notification" element={<Notification />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/inbox" element={<Inbox />} />
+          <Route path="/order" element={<MyOrder />} />
+          <Route path="/checkout" element={<Checkout />} />
             {/* <Route path="/auth" element={<Authentication />} />
             <Route path="/" element={<Home />} />
             <Route path="/create-post" element={<CreatePost />} />

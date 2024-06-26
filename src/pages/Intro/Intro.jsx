@@ -4,9 +4,11 @@ import FilledButton from '../../components/Buttons/FilledButton'
 import Intro1 from '../../../public/assets/img/intro1.png'
 import Intro2 from '../../../public/assets/img/intro2.png'
 import Intro3 from '../../../public/assets/img/intro3.png'
+import { useNavigate } from 'react-router'
  
  const Intro = () => {
     const [ pageNumber, setPageNumber ] = useState(1)
+    const navigate = useNavigate()
     let imgContent, title, content;
     if( pageNumber === 1 ) {
         imgContent = <img className='' src={Intro1}/>
@@ -24,8 +26,9 @@ import Intro3 from '../../../public/assets/img/intro3.png'
         content = <span className='text-secondary text-[13px] mb-[60px] text-center'>Real time tracking of your food on the app<br/>once you placed the order</span>
     }
     const handleNextClick = () => { 
+        if(pageNumber === 3)
+            navigate("/profile")
         setPageNumber(pageNumber + 1)
-        console.log(pageNumber);
     }
     return (
         <div className="relative px-[21px] h-[790px] flex flex-col items-center">
@@ -33,9 +36,9 @@ import Intro3 from '../../../public/assets/img/intro3.png'
                 { imgContent }
             </div>
             <div className='flex gap-[5px] my-8'>
-                <div className='border-[4px] rounded-full' style={{borderColor: pageNumber === 1 ? "#fc6011" : "#d6d6d6"}}/>
-                <div className='border-[4px] rounded-full' style={{borderColor: pageNumber === 2 ? "#fc6011" : "#d6d6d6"}}/>
-                <div className='border-[4px] rounded-full' style={{borderColor: pageNumber === 3 ? "#fc6011" : "#d6d6d6"}}/>
+                <div className='border-[4px] rounded-[999px]' style={{borderColor: pageNumber === 1 ? "#fc6011" : "#d6d6d6"}}/>
+                <div className='border-[4px] rounded-[999px]' style={{borderColor: pageNumber === 2 ? "#fc6011" : "#d6d6d6"}}/>
+                <div className='border-[4px] rounded-[999px]' style={{borderColor: pageNumber === 3 ? "#fc6011" : "#d6d6d6"}}/>
             </div>
             <p className='text-center text-[28px] text-primary mb-[33px]'>{ title }</p>
             { content }
