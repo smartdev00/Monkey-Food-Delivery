@@ -1,5 +1,5 @@
 export type IconType = "shopping-cart" | "arrow-down" | "arrow-right" | "arrow-left" | "lens" | "star-filled" | "star-border" | "heart-filled" | "heart-border" 
-  | "pen" | "income" | "shopping-bag" | "bell" | "mail" | "info" | "tick" | "plus";
+  | "pen" | "income" | "shopping-bag" | "bell" | "mail" | "info" | "tick" | "plus" | "map-pointer";
 
 export type ColorType = "gray" | "orange";
 

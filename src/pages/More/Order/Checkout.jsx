@@ -3,8 +3,11 @@ import visa from "../../../../public/assets/img/visa-payment.png";
 import emailPayment from "../../../../public/assets/img/payment-email.png";
 import FilledButton from "../../../components/Buttons/FilledButton";
 import Footer from "../../../components/Footer";
+import { useState } from "react";
+import AddCardModal from "../PaymentDetails/AddCardModal";
 
 const Checkout = () => {
+  const [isModalShow, setIsModalShow] = useState(false);
   return (
     <div className="h-[802px] relative bg-[#f6f6f6]">
       <div className="bg-white px-[21px] pb-[35px]">
@@ -26,7 +29,7 @@ const Checkout = () => {
         <div className="flex flex-col gap-[13px] pt-[16px] pb-[24px]  px-[21px] bg-white">
           <div className="flex justify-between items-center">
             <p className="text-[13px] text-secondary">Payment method</p>
-            <p className="text-[13px] text-main font-bold">
+            <p className="text-[13px] text-main font-bold cursor-pointer"onClick={() => setIsModalShow(true)}>
               <span className="text-xl font-extrabold">+</span> Add Card
             </p>
           </div>
@@ -75,6 +78,7 @@ const Checkout = () => {
         </div>
       </div>
       <Footer />
+      <AddCardModal isShow={isModalShow} setIsShow={setIsModalShow}/>
     </div>
   );
 };
