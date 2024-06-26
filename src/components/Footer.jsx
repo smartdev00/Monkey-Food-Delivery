@@ -9,12 +9,13 @@ import moreImage from '../../public/assets/img/more.svg'
 
 import footerBottom from '../../public/assets/img/footerBottom.png'
 
-const Footer = () => {
+const Footer = ({handleClickMenu, handleClickOffer, handleClickProfile, handleClickMore}) => {
 
     return (
         <>
-            <footer className="fixed  bottom-0 w-[33rem]  pt-4   bg-bottom  bg-cover  bg-no-repeat  downSvg  ">
-                <div className="  w-[33rem]    bg-bottom  bg-cover  bg-no-repeat  downImg   " >
+            <footer className="fixed  bottom-0    ">
+                <div className=" w-[33rem]    pt-3 bg-contain  bg-no-repeat downSvg   " >
+                <div className="  w-[33rem]   bg-bottom  bg-cover  bg-no-repeat    downImg " >
 
                     <div className="flex items-center px-10  gap-10 ">
                         <Link to='/Menu'><Icon className='self-center ' label="Menu" image={menuImage} /> </Link>
@@ -24,12 +25,13 @@ const Footer = () => {
                         </div>
 
                         <Link to='/Profile'><Icon label="Profile" image={profileImage} /> </Link>
-                        <Link to='/More'><Icon label="More" image={moreImage} /> </Link>
+                        <Link to='/More'><Icon label="More" image={moreImage}  /> </Link>
                     </div>
 
                     <div className="flex  justify-center ">
                         <img className="w-[12rem] " src={footerBottom} />
                     </div>
+                </div>
                 </div>
 
             </footer>
