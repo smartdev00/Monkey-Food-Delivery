@@ -24,6 +24,7 @@ import AboutUs from "./pages/More/AboutUs";
 import Inbox from "./pages/More/Inbox";
 import MyOrder from "./pages/More/Order/MyOrder";
 import Checkout from "./pages/More/Order/Checkout";
+import ChangeAddress from "./pages/More/Order/ChangeAddress";
 const App = () => {
   return (
     <div className="w-[100%] bg-white h-auto">
@@ -50,6 +51,7 @@ const App = () => {
           <Route path="/inbox" element={<Inbox />} />
           <Route path="/order" element={<MyOrder />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/changeaddress" element={<ChangeAddress />} />
             {/* <Route path="/auth" element={<Authentication />} />
             <Route path="/" element={<Home />} />
             <Route path="/create-post" element={<CreatePost />} />

@@ -1,7 +1,12 @@
 import TextField from "../../components/TextField/TextField";
 import FilledButton from "../../components/Buttons/FilledButton";
+import { useNavigate } from "react-router";
 
 const NewPassword = () => {
+  const navigate = useNavigate()
+  const handleNextClick = () => {
+    navigate("/profile")
+  }
   return (
     <div className="flex flex-col items-center px-[21px] h-[790px] relative">
       <p className="text-3xl mt-[38px] mb-3 text-center text-primary">New Password</p>
@@ -14,7 +19,7 @@ const NewPassword = () => {
         <TextField
             placeholder="Confirm Password"
         />
-        <FilledButton>Next</FilledButton>
+        <FilledButton onClick={handleNextClick}>Next</FilledButton>
       </div>
       <div className="absolute bottom-3 w-[119px] border-[2.5px] rounded-full border-primary" />
     </div>

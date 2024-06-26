@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Footer from "../components/Footer";
 import Line from '../components/Line'
@@ -10,6 +10,14 @@ import up from '../../public/assets/img/up.png'
 
 
 const Home = () => {
+  const navigate = useNavigate()
+  const handleLoginClick = () => {
+    navigate("/login")
+  }
+
+  const handleSignUpClick = () => {
+    navigate("/signup")
+  }
 
   return (
     <>
@@ -26,10 +34,10 @@ const Home = () => {
         </div>
         <div className="px-[34px] pt-[40px]">
 
-          <Login > Login</Login>
+          <Login onClick={handleLoginClick}> Login</Login>
         </div>
         <div className="px-[34px] pt-[40px]">
-          <SignUP> Create an Account </SignUP>
+          <SignUP onClick={handleSignUpClick}> Create an Account </SignUP>
         </div>
         <div className="px-[34px] pt-[40px]">
           <Line />
