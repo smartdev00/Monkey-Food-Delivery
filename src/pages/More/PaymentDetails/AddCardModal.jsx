@@ -20,7 +20,7 @@ export default function AddCardModal({isShow, setIsShow}) {
   const [removable, setRemovable] = useState(false);
 
   return (
-    <div className={`bg-[#000]/[0.45] pt-[146px] w-[375px] h-[812px] absolute bottom-0 ${isShow?'block':'hidden'}`}>
+    <div className={`bg-[#000]/[0.45] pt-[146px] w-[100%] h-[100vh] absolute bottom-0 ${isShow?'block':'hidden'}`}>
       <div className='bg-white flex flex-col h-full rounded-tl-[18px] rounded-tr-[18px] px-[21px] relative border-b-[2px] border-icongray-50 border-solid justify-stretch'>
         <div className='pt-[23px] pb-[18px] border-b-[#707070]/[0.1] border-b-[1px] border-solid text-icongray-50 font-bold text-sm'>
           Add Credit/Debit Card

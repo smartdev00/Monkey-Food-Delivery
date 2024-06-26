@@ -3,8 +3,9 @@ import Navbar from "../../../components/Navbar/Navbar";
 import KingBurgers from '../../../../public/assets/img/king-burgers.png'
 import Icons from "../../../components/Icons/Icons";
 import FilledButton from "../../../components/Buttons/FilledButton";
-
+import { Navigate, useNavigate } from "react-router";
 const MyOrder = () => {
+    const navigate = useNavigate()
     return (
         <div className="relative h-[802px]">
             <div className="px-[21px]">
@@ -66,7 +67,7 @@ const MyOrder = () => {
                     <p className="text-[13px] text-primary font-bold">Total</p>
                     <p className="text-[22px] text-main font-bold">$70</p>
                 </div>
-                <FilledButton>Checkout</FilledButton>
+                <FilledButton onClick={() => navigate("/checkout")}>Checkout</FilledButton>
             </div>
             <Footer/>
         </div>

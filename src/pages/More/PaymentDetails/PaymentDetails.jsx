@@ -10,10 +10,10 @@ import AddCardModal from './AddCardModal';
 export default function PaymentDetails() {
   const [isModalShow, setIsModalShow] = useState(false);
   return (
-    <div>
+    <div className='relative'>
       <div className='pl-[23px] pr-[21px] pt-[31px] flex justify-start items-center gap-[20px]'>
-        <Icons type='arrow-left' color='gray' />
-        <div className='grow'><Navbar text='Payment Details'/></div>
+        {/* <Icons type='arrow-left' color='gray' /> */}
+        <div className='grow'><Navbar text='Payment Details' back={true} /></div>
         
       </div>
       <div className='flex flex-col'>
