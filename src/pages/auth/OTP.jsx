@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import FilledButton from "../../components/Buttons/FilledButton";
+import { Link } from "react-router-dom";
 
 
 const OTP = () => {
@@ -15,19 +16,19 @@ const OTP = () => {
       <div className="flex flex-col gap-9 w-[100%] px-[13px] mt-9">
         <div className="flex gap-7">
             <input
-                className="align-middle w-[56px] h-[56px] text-center text-[37px] text-primary bg-[#f2f2f2] placeholder:text-placeholder rounded-xl"
+                className="align-middle w-[56px] h-[56px] text-center text-[37px] text-primary bg-[#f2f2f2] placeholder:text-placeholder rounded-[12px]"
                 placeholder="*"
             />
             <input
-                className="w-[56px] h-[56px] text-center text-[37px] text-primary bg-[#f2f2f2] placeholder:text-placeholder rounded-xl"
+                className="w-[56px] h-[56px] text-center text-[37px] text-primary bg-[#f2f2f2] placeholder:text-placeholder rounded-[12px]"
                 placeholder="*"
             />
             <input
-                className="w-[56px] h-[56px] text-center text-[37px] text-primary bg-[#f2f2f2] placeholder:text-placeholder rounded-xl"
+                className="w-[56px] h-[56px] text-center text-[37px] text-primary bg-[#f2f2f2] placeholder:text-placeholder rounded-[12px]"
                 placeholder="*"
             />
             <input
-                className="w-[56px] h-[56px] text-center text-[37px] text-primary bg-[#f2f2f2] placeholder:text-placeholder rounded-xl"
+                className="w-[56px] h-[56px] text-center text-[37px] text-primary bg-[#f2f2f2] placeholder:text-placeholder rounded-[12px]"
                 placeholder="*"
             />
         </div>
@@ -35,7 +36,7 @@ const OTP = () => {
       </div>
       <p className="text-sm mt-8 text-secondary">
         Didn't Receive?{" "} 
-        <span className="font-bold text-main">Click Here</span>
+        <Link to="/resetpassword" className="font-bold text-main">Click Here</Link>
       </p>
       <div className="absolute bottom-3 w-[119px] border-[2.5px] rounded-full border-primary" />
     </div>

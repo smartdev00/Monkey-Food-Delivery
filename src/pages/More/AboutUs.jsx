@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 const AboutUs = () => {
     return (
         <div className="px-[22px] relative h-[760px]">
-            <Navbar text="About Us" back="true" />
+            <Navbar text="About Us" back="true" shop="true" />
             <div className="pt-[55px]">
                 <div className="flex items-start gap-2 pt-[14px]">
                     <div className="border-[3px] mt-[6px] border-[#ee5a30] rounded-[100%]"/>

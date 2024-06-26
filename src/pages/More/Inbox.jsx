@@ -5,7 +5,7 @@ import Navbar from "../../components/Navbar/Navbar";
 const Inbox = () => {
     return (
         <div className="px-[22px] relative h-[760px]">
-            <Navbar back="true" text="Inbox"/>
+            <Navbar back="true" text="Inbox" shop="true" />
             <div className="pt-[48px]">
                 <div className="flex items-start gap-[5px] pt-[14px] h-[88px] border-b-1px border-[#eeeeee]">
                     <div className="border-[5px] border-[#ee5a30] rounded-[100%] mt-1"/>
