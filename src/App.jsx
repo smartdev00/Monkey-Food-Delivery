@@ -21,8 +21,7 @@ import NewPassword from "./pages/auth/NewPassword";
 import Intro from "./pages/Intro/Intro";
 const App = () => {
   return (
-    <div className="bg-[#999999] min-h-screen flex items-center">
-    <div className="container bg-white h-auto">
+    <div className="w-[100%] bg-white h-auto">
       <StatusBar/>
       <BrowserRouter>
         <Routes>
@@ -48,7 +47,6 @@ const App = () => {
           </Routes>
         {/* </AuthProvider> */}
       </BrowserRouter>
-    </div>
     </div>
   );
 };

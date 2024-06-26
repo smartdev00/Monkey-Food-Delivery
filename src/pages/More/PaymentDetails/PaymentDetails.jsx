@@ -1,13 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Footer from '../../../components/Footer'
 import Icons from '../../../components/Icons/Icons';
 import Navbar from '../../../components/Navbar/Navbar';
 import BorderButton from '../../../components/Buttons/BorderButton';
 import FilledButton from  '../../../components/Buttons/FilledButton';
 import visaImg from '../../../../public/assets/img/visa.png';
+import AddCardModal from './AddCardModal';
 
 export default function PaymentDetails() {
-  
+  const [isModalShow, setIsModalShow] = useState(false);
   return (
     <div>
       <div className='pl-[23px] pr-[21px] pt-[31px] flex justify-start items-center gap-[20px]'>
@@ -42,7 +43,7 @@ export default function PaymentDetails() {
           </div>
         </div>
         <div className='pt-[61px] px-[21px] pb-[238px]'>
-          <FilledButton>
+          <FilledButton onClick={() => setIsModalShow(true)}>
             <div className='flex items-center justify-center relative'>
               <div className='absolute left-[12px]'><Icons type='plus' color='gray' /></div> Add Another Credit/Debit Card
             </div>
@@ -50,6 +51,7 @@ export default function PaymentDetails() {
         </div>
       </div>
       <Footer />
+      <AddCardModal isShow={isModalShow} setIsShow={setIsModalShow}/>
     </div>
   );
 }
