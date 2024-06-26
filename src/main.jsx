@@ -6,6 +6,8 @@ import './input.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <div className='bg-placeholder'>
+      <App/>
+    </div>
   </React.StrictMode>,
 )

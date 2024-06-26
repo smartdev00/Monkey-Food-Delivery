@@ -32,6 +32,12 @@ export default {
     borderWidth: {
       "1px": "1px",
     },
+    container: {
+      center : true,
+    },
+    screens: {
+      'sm': '375px',
+    },
   },
   plugins: [],
 };
