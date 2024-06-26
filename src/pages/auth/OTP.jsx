@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router";
 import FilledButton from "../../components/Buttons/FilledButton";
 
+
 const OTP = () => {
+  const navigate = useNavigate()
+  const handleNextClick = () => {
+    navigate("/newpassword")
+  }
   return (
     <div className="flex flex-col items-center px-[21px] h-[790px] relative">
       <p className="text-[25px] mt-[38px] mb-3 text-center text-primary">We have sent an OTP to<br/>your Mobile</p>
@@ -25,7 +31,7 @@ const OTP = () => {
                 placeholder="*"
             />
         </div>
-        <FilledButton>Next</FilledButton>
+        <FilledButton onClick={handleNextClick}>Next</FilledButton>
       </div>
       <p className="text-sm mt-8 text-secondary">
         Didn't Receive?{" "} 

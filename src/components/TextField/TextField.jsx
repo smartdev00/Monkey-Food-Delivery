@@ -9,7 +9,7 @@ const TextField = (props) => {
             <input
                 name = { name }
                 type={ type }
-                className='w-[100%] bg-[#f2f2f2] rounded-full text-sm pl-[34px] py-[18px] h-[56px] text-primary'
+                className='w-[100%] bg-[#f2f2f2] rounded-[99px] text-sm pl-[34px] py-[18px] h-[56px] text-primary'
                 placeholder={placeholder}
                 value = { value }
                 onChange={(e) => onChange(e.target.value)}
