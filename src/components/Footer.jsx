@@ -12,7 +12,7 @@ import moreImage from "../../public/assets/img/more.svg";
 const Footer = ({}) => {
   return (
     <>
-      <footer className="absolute bottom-3">
+      <footer className="absolute bottom-0 w-[100%] left-0">
         <div>
           <div className="relative flex items-center px-18">
             <img className="bottom-0" src={Down} />
@@ -39,7 +39,6 @@ const Footer = ({}) => {
                 </Link>
             </div>
           </div>
-          
         </div>
       </footer>
     </>
