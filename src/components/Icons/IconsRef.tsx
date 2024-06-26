@@ -2,8 +2,8 @@ import React from 'react'
 import Icons from './Icons'
 import { IconType, ColorType } from '../../constants';
 
-let iconType: Array<IconType> = ["shopping-cart", "arrow-down", "arrow-right", "lens", "star-filled", "star-border", "heart-filled", "heart-border", 
-  "pen", "income", "shopping-bag", "bell", "mail", "info"];
+let iconType: Array<IconType> = ["shopping-cart", "arrow-down", "arrow-right", "arrow-left", "lens", "star-filled", "star-border", "heart-filled", "heart-border", 
+  "pen", "income", "shopping-bag", "bell", "mail", "info", "tick", "plus"];
 let colorType: Array<ColorType> = ["gray", "orange"];
 
 export default function IconsRef(){
