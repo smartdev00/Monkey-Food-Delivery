@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types'
-
+import Icons from '../../components/Icons/Icons'
+import search from '../../../public/assets/img/search.png'
 const TextField = (props) => {
     const { name, type, placeholder, value, onChange } = props;
 
     return (
         <div className='relative'>
+            <img src={search} alt="" />
             <input
                 name = { name }
                 type={ type }

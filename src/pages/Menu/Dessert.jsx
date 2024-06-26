@@ -14,9 +14,10 @@ const Desserts = () => {
 
   return (
     <div>
-      <div className="flex justify-between pt-[53px] px-[21px]">
+      
+      <div className="flex justify-between pt-[40px] px-[21px]">
         <div className="flex items-start gap-[5px]">
-          <Icons type='arrow-right' color='gray' />
+          <Icons type='arrow-left' color='gray' />
           <span className="font-bold text-Metropolis">Desserts</span>
         </div>
         <div className="flex items-center gap-[5px]">
@@ -32,7 +33,9 @@ const Desserts = () => {
       <DessertItem image = {Chewy} title={'Fudgy Chewy Brownies'} rate={4.9} subtitle ={'Minute by tuk tuk'}/>
 
 
-
+      <div className="flex   pb-[138px] px-[21px]">
+    
+      </div>
       <Footer />
     </div>
   );

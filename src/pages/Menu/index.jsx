@@ -13,8 +13,8 @@ const Menu = () => {
 
   return (
     <div>
-      <div className="flex justify-between pt-[53px] px-[21px]">
-        <span className="font-bold text-">Menu</span>
+      <div className="flex justify-between pt-[40px] px-[21px]">
+      <span className="font-bold text-Metropolis">Menu</span>
         <div className="flex items-center gap-[5px]">
           <Icons type='shopping-cart' color='gray' />
         </div>
@@ -30,11 +30,12 @@ const Menu = () => {
 
       <Link to='/Food'><MenuItem menuImage = {FoodImage}  Name={'Food'} counts={120}/>  </Link>
       <Link to='/Beverage'>  <MenuItem menuImage = {BeverageImage}  Name={'Beverage'} counts={220}/>   </Link>
-      <Link to='/Desserts'> <MenuItem menuImage = {DessertImage}  Name={'Desserts'} counts={150}/>  </Link>
+      <Link to='/Menu/Desserts'> <MenuItem menuImage = {DessertImage}  Name={'Desserts'} counts={150}/>  </Link>
       <Link to='/Promotions'> <MenuItem menuImage = {PromotionImage}  Name={'Promotions'} counts={25}/> </Link>
-
         
       </div>
+ 
+
       <Footer />
     </div>
   );

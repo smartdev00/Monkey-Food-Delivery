@@ -8,7 +8,7 @@ const MenuItem = (props) => {
       <div className="flex align-middle">
         <img className='  w-[220px]' src={menuImage} alt="" style={{ position: 'relative', left: '35px' }} />
       </div>
-      <div className="bg-white flex  flex-col ps-[50px] aglign-center shadow-lg   text-dark text-base h-[92px] font-semibold py-[16px] rounded-l-full rounded-r-lg w-[550px]" >
+      <div className="bg-white flex  flex-col ps-[50px] aglign-center shadow-lg   text-dark text-base h-[92px] font-semibold py-[16px] rounded-l-[30px] rounded-r-[10px]  w-[550px]" >
         <div className=" flex   text-center  ">{Name}</div>
         <div className=" flex   text-center  ">{counts} items</div>
 
