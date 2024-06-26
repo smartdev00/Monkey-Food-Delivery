@@ -6,7 +6,7 @@ const Icon = ({ label, image }) => {
                 <div className=' flex justify-center  '>
                     <img className="   " src={image}  />
                 </div>
-                <div className='flex text-center'>
+                <div className='flex text-center text-xs text-secondary'>
                     {label}
                 </div>
             </div>
