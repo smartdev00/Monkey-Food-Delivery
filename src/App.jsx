@@ -10,6 +10,12 @@ import Home from "./pages/Home";
 import Menu from './pages/Menu'
 import Offers from './pages/Offers'
 import More from './pages/More'
+import SignUp from "./pages/auth/SignUp";
+import Login from "./pages/auth/Login";
+import ResetPassword from "./pages/auth/ResetPassword";
+import OTP from "./pages/auth/OTP";
+import NewPassword from "./pages/auth/NewPassword";
+import Intro from "./pages/Intro/Intro";
 const App = () => {
   return (
     <div className="container bg-white min-h-screen">
@@ -22,6 +28,12 @@ const App = () => {
           <Route path="/More" element={<More />} />
           <Route path="/Offers" element={<Offers />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/resetpassword" element={<ResetPassword />} />
+          <Route path="/otp" element={<OTP />} />
+          <Route path="/newpassword" element={<NewPassword />} />
+          <Route path="/intro" element={<Intro />} />
             {/* <Route path="/auth" element={<Authentication />} />
             <Route path="/" element={<Home />} />
             <Route path="/create-post" element={<CreatePost />} />
