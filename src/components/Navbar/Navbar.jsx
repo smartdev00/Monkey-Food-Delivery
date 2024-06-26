@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+// import Basket from "../Icons/Basket";
+=======
 import Icons from "../Icons/Icons";
+>>>>>>> cd687a54e8c4ca120342161f5a84ca6cc5d0f1f0
 
 const Navbar = (props) => {
     return (

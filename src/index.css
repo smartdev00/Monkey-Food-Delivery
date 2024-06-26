@@ -16,6 +16,24 @@
   background-color: #ffffff50;
 }
 
+<<<<<<< HEAD
+.downImg {
+  background-image: url(../public/assets/img/down.svg);
+}
+.downImg1 {
+    background-image: url(../public/assets/img/down1.svg);
+    opacity: .8;
+
+}
+
+  .backShadow {
+    background-image: url(../public/assets/img/back.svg);
+  }
+
+  .upSvg {
+    background-image: url(../public/assets/img/upback.svg);
+  }
+=======
 .downImg{
   background-image: url(../public/assets/img/down.svg); 
     
@@ -312,3 +330,4 @@ textarea.form-control-lg {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 } */
+>>>>>>> cd687a54e8c4ca120342161f5a84ca6cc5d0f1f0
