@@ -1,10 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ButtonShow from "./pages/ButtonShow";
 import IconsRef from "./components/Icons/IconsRef";
+import Navbar from "./components/Navbar/Navbar";
+import Profile from "./pages/Profile";
 
 const App = () => {
   return (
     <div className="bg-slate-100 h-full min-h-screen">
+      <StatusBar/>
       <BrowserRouter>
         {/* <AuthProvider> */}
           <Routes>
