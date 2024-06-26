@@ -12,6 +12,10 @@ export default {
         50: "#fc6011",
         100: "#ee5a30",
       },
+      pageback: {
+        50: "#f6f6f6",
+        100: "#d8d8d8",
+      },
       transparent: "transparent",
       main: "#fc6011",
       primary: "#4a4b4d",
@@ -20,23 +24,42 @@ export default {
       facebook: "#367FC0",
       white: "#ffffff",
     },
-    extend: {},
+    extend: {
+      spacing: {
+        "9px": "9px",
+        "13px": "13px",
+        "16px": "16px",
+        "18px": "18px",
+        "23px": "23px",
+        "21px": "21px",
+        "19px": "19px",
+        "31px": "31px",
+        "124px": "124px",
+      },
+    },
     padding: {
       "108px": "108px",
       "16px": "16px",
     },
     width: {
+      "53px": "53px",
       "307px": "307px",
     },
-    height: {},
+    height: {
+      "53px": "53px",
+      "75px": "75px",
+    },
     borderWidth: {
       "1px": "1px",
     },
     container: {
-      center : true,
+      center: true,
     },
     screens: {
-      'sm': '375px',
+      sm: "375px",
+    },
+    borderRadius: {
+      "7px": "7px",
     },
   },
   plugins: [],
