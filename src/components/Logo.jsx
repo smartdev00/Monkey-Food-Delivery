@@ -4,11 +4,17 @@ const Logo = () => {
 
     return (
         <>
-            <div className='  flex-col h-1/2  items-center text-center'>
-                <p className='flex justify-center'><img className="bg-center  " src={logoImage} /></p>
-                <p><p className='text-lg text-orange-500'>Meal</p> <p className='text-orange-500'>Monkey</p> </p>
-                <p className="text-sm   text-slate-100 fs">Food Delivery</p>
-            </div>
+            <div className='flex-col  items-center   text-center'>
+                <div className=' items-center'>
+                    <img className="bg-center" src={logoImage} />
+                </div>
+                <div className=' text-6xl text-justify'>
+                    <p className="text-[#FC6011]">Meal</p>
+                    <p className='  '>Monkey</p>
+                </div >
+                <div className="text-6xl  text-slate-100  ">Food Delivery</div>
+               
+            </div >
         </>
     );
 };

@@ -10,17 +10,18 @@ const Home = () => {
 
   return (
     <>
-      
-        <div className=" ">
-          <div class="flex justify-center ...">
-            <img className="opacity-80 w-full h-[28em]  " src={up} />
-          </div>
+
+       
+        <div class="flex   w-48 h-48   justify-around ">
+          {/* <img className="opacity-80   " src={up} /> */}
+
           <Logo />
 
-        <Footer />
-        </div>
-      </>
-      );
+          {/* <Footer /> */}
+        
+      </div>
+    </>
+  );
 };
 
-      export default Home;
+export default Home;

@@ -9,7 +9,7 @@ import Offers from './pages/Offers'
 import More from './pages/More'
 const App = () => {
   return (
-    <div className="bg-slate-100 h-full min-h-screen">
+    <div className="container bg-red-200 min-h-screen">
       <BrowserRouter>
         <Routes>
           <Route path="/button" element={<ButtonShow />} />

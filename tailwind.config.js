@@ -34,10 +34,9 @@ export default {
     },
     container: {
       center : true,
-       
     },
     screens: {
-      'sm': '528px',
+      'sm': '375px',
     },
   },
   plugins: [],
