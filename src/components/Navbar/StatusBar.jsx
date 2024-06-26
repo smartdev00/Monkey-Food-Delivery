@@ -18,8 +18,8 @@ const StatusBar = () => {
         }, 1000 * 60);
     }, [currentTime])
     return (
-        <div className="flex justify-between px-[21px]">
-            <span className="font-bold text-primary">{ currentTime }</span>
+        <div className="flex justify-between px-[21px] pt-[6px]">
+            <span className="font-bold text-primary text-xs">{ currentTime }</span>
             <div className="flex items-center gap-[5px]">
                 <img className="" src={antena}/>
                 <img src={wifi}/>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
- 
+import Footer from "../../components/Footer";
 const Menu = () => {
 
   return (
@@ -12,8 +12,8 @@ const Menu = () => {
               data-tooltip-content="Create"
               className="fixed bottom-14 right-4 text-2xl flex justify-center overflow-hidden cursor-pointer"
             >
-              3333  
             </Link>
+              <Footer />  
     </div>
   );
 };
