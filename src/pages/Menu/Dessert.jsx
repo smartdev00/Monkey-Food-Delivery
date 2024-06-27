@@ -14,11 +14,11 @@ import Chewy from '../../../public/assets/img/desserts/chewy.png'
 const Desserts = () => {
 
   return (
-    <div className="  relative h-[760px]">
+    <div className="relative">
       <div className="px-[22px] ">
         <Navbar text="Desserts" shop="true" />
       </div>
-      <div className="flex  pt-[24px] pb-[19px] px-[21px]">
+      <div className="flex  flex-col  pt-[24px] pb-[19px] px-[21px]">
         <SearchBar placeholder=" Search Food" />
       </div>
       <DessertItem image={ApplePie} title={'French Apple Pie'} rate={4.9} subtitle={'Minute by tuk tuk'} />

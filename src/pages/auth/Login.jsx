@@ -21,8 +21,8 @@ const Login = () => {
       <Link to="/resetpassword" className="text-sm mt-6 text-secondary">
         Forgot your password?
       </Link>
-      <div className="flex flex-col gap-7 items-center mt-[49px]">
-        <p className="text-sm text-secondary">
+      <div className="flex flex-col gap-7 px-[13px] mt-[49px] w-[100%]">
+        <p className="text-sm text-secondary text-center">
             or Login With
         </p>
         <LoginFacebook/>

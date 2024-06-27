@@ -6,7 +6,7 @@ const AboutUs = () => {
         <div className="px-[22px] relative h-[760px]">
             <Navbar text="About Us" back="true" shop="true" />
             <div className="pt-[55px]">
-                <div className="flex items-start gap-2 pt-[14px]">
+                <div className="flex items-start gap-2">
                     <div className="border-[3px] mt-[6px] border-[#ee5a30] rounded-[100%]"/>
                     <div className="flex flex-col">
                         <p className="text-sm text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -37,7 +37,7 @@ const AboutUs = () => {
                 <div className="flex items-start gap-2 pt-[18px]">
                     <div className="border-[3px] mt-[6px] border-[#ee5a30] rounded-[100%]"/>
                     <div className="flex flex-col">
-                        <p className="text-sm text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        <p className="text-sm text-primary overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing 
                             elit, sed do eiusmod tempor incididunt ut labore et 
                             dolore magna aliqua. Ut enim ad minim veniam, 
                             quis nostrud 
