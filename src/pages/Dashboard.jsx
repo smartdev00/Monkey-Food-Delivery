@@ -26,11 +26,11 @@ import italian from '../../public/assets/img/slide/italian.png'
 const Menu = () => {
 
     return (
-        <div className="  relative h-[760px]">
+        <div className="relative ">
             <div className="px-[22px] ">
                 <Navbar text="Good morning Akila!" shop="true" />
             </div>
-            <div className="flex  pt-[32px] px-[21px]">
+            <div className="flex   flex-col pt-[32px] px-[21px]">
 
                 <SearchBar placeholder=" Search Food" />
 
@@ -66,9 +66,11 @@ const Menu = () => {
                     <span className="font-bold text-[#FC6011] text-[13px] text-Metropolis">View All</span>
                 </div>
             </div>
+            <div className='flex flex-col gap-4'>
 
-            <RecentList />
-
+                <RecentList />
+            </div>
+            <div className="flex   pb-[138px] px-[21px]"></div>
             <Footer />
         </div>
     );
