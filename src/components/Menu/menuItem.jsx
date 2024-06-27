@@ -4,7 +4,7 @@ import NextOk from '../../../public/assets/img/menu/ok.svg'
 const MenuItem = (props) => {
   const { menuImage, Name, counts} = props;
   return (
-    <div className="flex relative columns-3 py-[14px] ">
+    <div className="flex relative columns-3 py-[18px] ">
       <div className="flex align-middle">
         <img className='w-[220px]' src={menuImage} alt="" style={{ position: 'relative', left: '35px' }} />
       </div>
