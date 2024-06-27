@@ -5,13 +5,14 @@ import TextField from '../../components/TextField/TextField';
 import Icons from '../../components/Icons/Icons';
 import FilledButton from '../../components/Buttons/FilledButton'
 import Footer from '../../components/Footer';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Profile = () => {
+    const navigate =  useNavigate();
     return (
         <div className='relative h-[996px]'>
             <div className='px-[21px]'>
-                <Navbar text="Profile" shop="true " />
+                <Navbar text="Profile" shop="true" />
                 <div className='flex flex-col justify-center items-center mb-[47px] mt-[30px]'>
                     <img src={avatar}/>
                     <div className='flex items-center gap-[7px] mt-[18px] mb-[11px]'>
@@ -28,7 +29,7 @@ const Profile = () => {
                     <TextField placeholder="Adress"/>
                     <TextField placeholder="Password"/>
                     <TextField placeholder="Confirm Password"/>
-                    <FilledButton>Save</FilledButton>
+                    <FilledButton onClick={() => navigate("/dashboard")}>Save</FilledButton>
                 </div>
             </div>
             <Footer/>
