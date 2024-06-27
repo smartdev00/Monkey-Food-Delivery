@@ -11,7 +11,7 @@ import OfferList from './OfferList'
 const Offer = () => {
 
   return (
-    <>
+    <div>
 
       <div className="  elative h-[760px]">
         <div className="px-[22px] ">
