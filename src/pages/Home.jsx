@@ -21,6 +21,7 @@ const Home = () => {
 
   return (
     <>
+    
       <div className="  h-[406px]    ">
         <img className=" " src={up} />
       </div>

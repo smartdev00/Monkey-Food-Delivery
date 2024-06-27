@@ -7,6 +7,7 @@ export default {
         50: "#4a4b4d",
         100: "#7c7d7e",
         200: "#828282",
+        300: "#b6b7b7",
       },
       iconorange: {
         50: "#fc6011",
