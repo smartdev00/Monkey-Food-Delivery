@@ -5,9 +5,11 @@ import FilledButton from "../../../components/Buttons/FilledButton";
 import Footer from "../../../components/Footer";
 import { useState } from "react";
 import AddCardModal from "../PaymentDetails/AddCardModal";
+import CompletePay from "../PaymentDetails/CompletePay";
 
 const Checkout = () => {
   const [isModalShow, setIsModalShow] = useState(false);
+  const [isPayShow, setIsPayShow] = useState(false);
   return (
     <div className="h-[802px] relative bg-[#f6f6f6]">
       <div className="bg-white px-[21px] pb-[35px]">
@@ -74,11 +76,13 @@ const Checkout = () => {
           </div>
         </div>
         <div className="bg-white p-[21px] h-[200px]">
-          <FilledButton>Send Order</FilledButton>
+          <FilledButton onClick={()=>setIsPayShow(true)}>Send Order</FilledButton>
         </div>
       </div>
       <Footer />
       <AddCardModal isShow={isModalShow} setIsShow={setIsModalShow}/>
+      <CompletePay isShow={isPayShow} setIsShow={setIsPayShow}/>
+
     </div>
   );
 };

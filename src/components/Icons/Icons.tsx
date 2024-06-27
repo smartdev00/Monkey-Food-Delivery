@@ -210,6 +210,67 @@ export default function Icons({type, color}: Icon){
         </span>
       );
       break;
+    case "menu":
+      content = (
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" className={color === "gray"?'fill-icongray-300':'fill-iconorange-50'}>
+            <g id="Group_6847" data-name="Group 6847" transform="translate(-3 -1936)">
+              <rect id="Rectangle_17318" data-name="Rectangle 17318" width="6" height="6" rx="1" transform="translate(3 1936)" />
+              <rect id="Rectangle_17321" data-name="Rectangle 17321" width="6" height="6" rx="1" transform="translate(3 1944)" />
+              <rect id="Rectangle_17319" data-name="Rectangle 17319" width="6" height="6" rx="1" transform="translate(11 1936)" />
+              <rect id="Rectangle_17320" data-name="Rectangle 17320" width="6" height="6" rx="1" transform="translate(11 1944)" />
+            </g>
+          </svg>
+        </span>
+      );
+      break;
+    case "offer":
+      content = (
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16.217" height="15.805" viewBox="0 0 16.217 15.805" className={color === "gray"?'fill-icongray-300':'fill-iconorange-50'}>
+            <g id="_002-shopping-bag" data-name="002-shopping-bag" transform="translate(0 -6.501)">
+              <path id="Path_4245" data-name="Path 4245" d="M16.214,155.407l-1.173-10.484a.475.475,0,0,0-.472-.422H1.646a.475.475,0,0,0-.472.422L0,155.407a.475.475,0,0,0,.472.528H15.742a.475.475,0,0,0,.472-.528Z" transform="translate(0 -133.629)" />
+              <path id="Path_4246" data-name="Path 4246" d="M264.107,155.407l-1.172-10.484a.475.475,0,0,0-.472-.422H256v11.434h7.633a.475.475,0,0,0,.472-.528Z" transform="translate(-247.892 -133.629)" />
+              <circle id="Ellipse_14" data-name="Ellipse 14" cx="0.95" cy="0.95" r="0.95" transform="translate(4.102 12.408)" />
+              <circle id="Ellipse_15" data-name="Ellipse 15" cx="0.95" cy="0.95" r="0.95" transform="translate(10.215 12.408)" />
+              <g id="Group_2273" data-name="Group 2273" transform="translate(4.577 6.501)">
+                <path id="Path_4247" data-name="Path 4247" d="M151.089,13.675a.475.475,0,0,1-.475-.475V10.033a2.581,2.581,0,0,0-5.163,0V13.2a.475.475,0,1,1-.95,0V10.033a3.532,3.532,0,1,1,7.063,0V13.2A.475.475,0,0,1,151.089,13.675Z" transform="translate(-144.501 -6.501)" />
+              </g>
+              <path id="Path_4248" data-name="Path 4248" d="M256,6.5v.95a2.584,2.584,0,0,1,2.581,2.581V13.2a.475.475,0,0,0,.95,0V10.033A3.536,3.536,0,0,0,256,6.5Z" transform="translate(-247.892 0)" />
+            </g>
+          </svg>
+        </span>
+      );
+      break;
+    case "profile":
+      content = (
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13.204" height="17.361" viewBox="0 0 13.204 17.361" className={color === "gray"?'fill-icongray-300':'fill-iconorange-50'}>
+            <g id="man-user" transform="translate(-41.895)">
+              <path id="Path_4253" data-name="Path 4253" d="M108.03,8.49c1.93,0,3.5-1.9,3.5-4.245S111.011,0,108.03,0s-3.5,1.9-3.5,4.245S106.1,8.49,108.03,8.49Z" transform="translate(-59.533)" />
+              <path id="Path_4254" data-name="Path 4254" d="M41.9,300.445c0-.143,0-.04,0,0Z" transform="translate(0 -285.473)" />
+              <path id="Path_4255" data-name="Path 4255" d="M308.085,301.616c0-.039,0-.272,0,0Z" transform="translate(-252.986 -286.532)" />
+              <path id="Path_4256" data-name="Path 4256" d="M55.1,183.725c-.065-4.084-.6-5.248-4.68-5.985a2.867,2.867,0,0,1-3.828,0c-4.037.729-4.6,1.875-4.678,5.852-.006.325-.009.342-.01.3,0,.071,0,.2,0,.429,0,0,.972,1.959,6.6,1.959s6.6-1.959,6.6-1.959c0-.146,0-.248,0-.317A2.631,2.631,0,0,1,55.1,183.725Z" transform="translate(-0.012 -168.924)" />
+            </g>
+          </svg>
+        </span>
+      );
+      break;
+    case "more":
+      content = (
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15.704" height="15.805" viewBox="0 0 15.704 15.805" className={color === "gray"?'fill-icongray-300':'fill-iconorange-50'} >
+            <g id="Group_6814" data-name="Group 6814" transform="translate(5046.159 -481)">
+              <path id="Path_2718" data-name="Path 2718" d="M301.772,3.784h-14.16a.772.772,0,0,0-.772.772v.712a.772.772,0,0,0,.772.772h14.16a.773.773,0,0,0,.773-.772V4.557a.773.773,0,0,0-.773-.772Z" transform="translate(-5333 477.216)" />
+              <path id="Path_2719" data-name="Path 2719" d="M301.772,18.726h-14.16a.771.771,0,0,0-.772.772v.713a.772.772,0,0,0,.772.772h14.16a.773.773,0,0,0,.773-.772V19.5a.773.773,0,0,0-.773-.772Z" transform="translate(-5333 475.822)" />
+              <path id="Path_2720" data-name="Path 2720" d="M303.1,14.518a.773.773,0,0,0-.773-.772h-8.8a.773.773,0,0,0-.773.772v.712a.772.772,0,0,0,.773.772h8.8a.773.773,0,0,0,.773-.772Z" transform="translate(-5333.551 476.286)" />
+              <path id="Path_2721" data-name="Path 2721" d="M303.1,9.565a.773.773,0,0,0-.773-.772h-8.8a.773.773,0,0,0-.773.772v.712a.769.769,0,0,0,.059.3.772.772,0,0,0,.714.477h8.8a.773.773,0,0,0,.773-.772Z" transform="translate(-5333.551 476.748)" />
+              <path id="Path_2722" data-name="Path 2722" d="M286.97,14.1a.132.132,0,0,0,.05-.01.13.13,0,0,0,.042-.029l2.817-1.626,0-.005a.128.128,0,0,0,.048-.046.141.141,0,0,0,.018-.064.137.137,0,0,0-.022-.07.127.127,0,0,0-.055-.047v0l-2.805-1.62a.131.131,0,0,0-.065-.034.126.126,0,0,0-.073.007.122.122,0,0,0-.057.046.129.129,0,0,0-.024.07h0v3.3a.114.114,0,0,0,.009.049.129.129,0,0,0,.12.079Z" transform="translate(-5333 476.586)" />
+            </g>
+          </svg>
+        </span>
+      );
+      break;
     default:
       content = <span></span>;
       break;

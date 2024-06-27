@@ -11,8 +11,6 @@ import OfferList from './OfferList'
 const Offer = () => {
 
   return (
-    <>
-
 <div className="  relative ">
         <div className="px-[22px] ">
           <Navbar text="Latest Offers" shop="true" />
@@ -34,8 +32,7 @@ const Offer = () => {
         <div className="flex pb-[138px] "></div>
 
       <Footer />
-      </div>
-    </>
+    </div>
   );
 };
 
