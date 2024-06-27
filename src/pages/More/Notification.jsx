@@ -9,56 +9,56 @@ const Notification = () => {
                 <div className="flex items-start gap-8 pt-[14px] h-[64px] border-b-1px border-[#eeeeee]">
                     <div className="border-[5px] border-[#ee5a30] rounded-[100%]"/>
                     <div className="flex flex-col">
-                        <p className="text-sm text-primary">Your orders has been picked up</p>
+                        <p className="text-sm text-primary h-[20px] overflow-hidden">Your orders has been picked up</p>
                         <span className="text-xs text-placeholder">Now</span>
                     </div>
                 </div>
                 <div className="flex items-start gap-8 pt-[14px] h-[64px] border-b-1px border-[#eeeeee]">
                     <div className="border-[5px] border-[#ee5a30] rounded-[100%]"/>
                     <div className="flex flex-col">
-                        <p className="text-sm text-primary">Your orders has been picked up</p>
+                        <p className="text-sm text-primary h-[20px] overflow-hidden">Your orders has been picked up</p>
                         <span className="text-xs text-placeholder">Now</span>
                     </div>
                 </div>
                 <div className="flex items-start gap-8 pt-[14px] h-[64px] border-b-1px border-[#eeeeee]">
                     <div className="border-[5px] border-[#ee5a30] rounded-[100%]"/>
                     <div className="flex flex-col">
-                        <p className="text-sm text-primary">Your orders has been picked up</p>
+                        <p className="text-sm text-primary h-[20px] overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span className="text-xs text-placeholder">Now</span>
                     </div>
                 </div>
                 <div className="flex items-start gap-8 pt-[14px] h-[64px] border-b-1px border-[#eeeeee]">
                     <div className="border-[5px] border-[#ee5a30] rounded-[100%]"/>
                     <div className="flex flex-col">
-                        <p className="text-sm text-primary">Your orders has been picked up</p>
+                        <p className="text-sm text-primary h-[20px] overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span className="text-xs text-placeholder">Now</span>
                     </div>
                 </div>
                 <div className="flex items-start gap-8 pt-[14px] h-[64px] border-b-1px border-[#eeeeee]">
                     <div className="border-[5px] border-[#ee5a30] rounded-[100%]"/>
                     <div className="flex flex-col">
-                        <p className="text-sm text-primary">Your orders has been picked up</p>
+                        <p className="text-sm text-primary h-[20px] overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span className="text-xs text-placeholder">Now</span>
                     </div>
                 </div>
                 <div className="flex items-start gap-8 pt-[14px] h-[64px] border-b-1px border-[#eeeeee]">
                     <div className="border-[5px] border-[#ee5a30] rounded-[100%]"/>
                     <div className="flex flex-col">
-                        <p className="text-sm text-primary">Your orders has been picked up</p>
+                        <p className="text-sm text-primary h-[20px] overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span className="text-xs text-placeholder">Now</span>
                     </div>
                 </div>
                 <div className="flex items-start gap-8 pt-[14px] h-[64px] border-b-1px border-[#eeeeee]">
                     <div className="border-[5px] border-[#ee5a30] rounded-[100%]"/>
                     <div className="flex flex-col">
-                        <p className="text-sm text-primary">Your orders has been picked up</p>
+                        <p className="text-sm text-primary h-[20px] overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span className="text-xs text-placeholder">Now</span>
                     </div>
                 </div>
                 <div className="flex items-start gap-8 pt-[14px] h-[64px] border-b-1px border-[#eeeeee]">
                     <div className="border-[5px] border-[#ee5a30] rounded-[100%]"/>
                     <div className="flex flex-col">
-                        <p className="text-sm text-primary">Your orders has been picked up</p>
+                        <p className="text-sm text-primary h-[20px] overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span className="text-xs text-placeholder">Now</span>
                     </div>
                 </div>

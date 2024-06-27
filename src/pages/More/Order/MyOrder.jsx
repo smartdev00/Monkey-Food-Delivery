@@ -3,7 +3,7 @@ import Navbar from "../../../components/Navbar/Navbar";
 import KingBurgers from '../../../../public/assets/img/king-burgers.png'
 import Icons from "../../../components/Icons/Icons";
 import FilledButton from "../../../components/Buttons/FilledButton";
-import { Navigate, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 const MyOrder = () => {
     const navigate = useNavigate()
     return (
@@ -15,7 +15,7 @@ const MyOrder = () => {
                 <img src={KingBurgers}/>
                 <div className="flex flex-col justify-between">
                     <p className="text-base text-primary font-bold">King Burgers</p>
-                    <div className="flex">
+                    <div className="flex gap-[5px]">
                         <Icons type="star-filled"/>
                         <p className="text-[11px] text-main">4.9</p>
                         <p className="text-xs text-placeholder">(124 ratings)</p>

@@ -14,7 +14,7 @@ const OTP = () => {
       <span className="text-sm text-center text-secondary">Please check your mobile number 071*****12<br/>
         continue to reset your password</span>
       <div className="flex flex-col gap-9 w-[100%] px-[13px] mt-9">
-        <div className="flex gap-7">
+        <div className="flex gap-7 justify-around">
             <input
                 className="align-middle w-[56px] h-[56px] text-center text-[37px] text-primary bg-[#f2f2f2] placeholder:text-placeholder rounded-[12px]"
                 placeholder="*"
