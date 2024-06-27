@@ -7,6 +7,7 @@ let iconType: Array<IconType> = ["shopping-cart", "arrow-down", "arrow-right", "
 let colorType: Array<ColorType> = ["gray", "orange"];
 
 export default function IconsRef(){
+  
   let content = (
     iconType.map((type,indexa) => {
       return(

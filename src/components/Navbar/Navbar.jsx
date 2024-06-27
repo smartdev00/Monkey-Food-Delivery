@@ -15,7 +15,7 @@ const Navbar = (props) => {
                 </div>
                 <span className="text-2xl text-primary font-semibold">{props.text}</span>
             </div>
-            <div onClick={() => navigate("/order")}>
+            <div onClick={() => navigate("/more/order")}>
                 {shop ? <Icons type="shopping-cart" color="gray" /> : "" }
             </div>
         </div>

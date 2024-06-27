@@ -18,7 +18,7 @@ const Login = () => {
         <TextField name="password" placeholder="Password" type="text" />
         <FilledButton onClick={handleLoginClick}>Login</FilledButton>
       </div>
-      <Link to="/resetpassword" className="text-sm mt-6 text-secondary">
+      <Link to="/auth/login/resetpassword" className="text-sm mt-6 text-secondary">
         Forgot your password?
       </Link>
       <div className="flex flex-col gap-7 px-[13px] mt-[49px] w-[100%]">
@@ -30,7 +30,7 @@ const Login = () => {
       </div>
       <p className="text-sm mt-[83px] text-secondary">
         Don't have an Account?{" "}
-        <Link to="/signup" className="font-bold text-main">Sign Up</Link>
+        <Link to="/auth/signup" className="font-bold text-main">Sign Up</Link>
       </p>
       <div className="absolute bottom-3 w-[119px] border-[2.5px] rounded-full border-primary" />
     </div>

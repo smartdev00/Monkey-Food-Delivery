@@ -26,16 +26,14 @@ import italian from '../../public/assets/img/slide/italian.png'
 const Menu = () => {
 
     return (
-        <div className="relative ">
+        <div className="relative flex flex-col items-stretch ">
             <div className="px-[22px] ">
                 <Navbar text="Good morning Akila!" shop="true" />
             </div>
             <div className="flex   flex-col pt-[32px] px-[21px]">
-
                 <SearchBar placeholder=" Search Food" />
-
             </div>
-            <div className="flex justify-start pt-[30px]  gap-[8px] px-[21px]">
+            <div className="flex justify-between pt-[30px]  gap-[8px] px-[21px] self-stretch">
                 <HomeSlide label="Offers" image={ham} />
                 <HomeSlide label="Sri Lankan" image={sri} />
                 <HomeSlide label="italian" image={italian} />

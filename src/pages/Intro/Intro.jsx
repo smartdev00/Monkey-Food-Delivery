@@ -27,7 +27,7 @@ import { useNavigate } from 'react-router'
     }
     const handleNextClick = () => { 
         if(pageNumber === 3)
-            navigate("/login")
+            navigate("/auth/login")
         setPageNumber(pageNumber + 1)
     }
     return (

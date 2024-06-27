@@ -20,7 +20,7 @@ const Footer = ({}) => {
       <footer className="fixed bottom-0 w-[100%] left-0">
         <div>
           <div className="relative flex items-center px-18">
-            <img className="bottom-0" src={Down} />
+            <img className="bottom-0 w-[100%] h-[120px]" src={Down} />
             <div className="flex items-center absolute w-[100%] justify-around top-10">
               <Link to="/menu">
                 <Icon label="Menu" image={menuImage} />

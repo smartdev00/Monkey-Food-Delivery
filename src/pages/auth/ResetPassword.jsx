@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 const ResetPassword = () => {
   const navigate = useNavigate()
   const handleSendClick = () => {
-    navigate("/otp")
+    navigate("/auth/login/resetpassword/otp")
   }
   return (
     <div className="relative flex flex-col items-center px-[21px] h-[790px]">
