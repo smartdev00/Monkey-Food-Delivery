@@ -11,7 +11,7 @@ import OfferList from './OfferList'
 const Offer = () => {
 
   return (
-    <>
+    <div className="relative">
     <div className='p-[30px]'>
      <Navbar text="Latest Offers"/>
 
@@ -21,7 +21,6 @@ const Offer = () => {
           <span className=" text-[14px]">Find discounts, Offers special
             meals and more!</span>
         </div>
-
       </div>
       <div className=" w-[187px] pt-[24px] px-[21px]">
         <Check >Check Offers</Check>
@@ -34,7 +33,7 @@ const Offer = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 
