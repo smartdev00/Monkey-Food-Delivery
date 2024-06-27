@@ -4,8 +4,8 @@ import Icons from '../../components/Icons/Icons'
 const OffersItem = (props) => {
   const { title, image, subtitle, rate } = props;
   return (
-    <div className="pt-[22px]">
-    <div className="flex flex-col h-[242px] bg-no-repeat bg-contain " >
+    <div className="relative pt-[22px]">
+    <div className="flex flex-col h-[auto] bg-no-repeat bg-contain " >
         <img src={image} alt="Food Image" />
         <div className="flex  pt-[7px] px-[21px]">
             <p className="text-dark-600 font-bold text-primary text-[18px] ">{title}</p>

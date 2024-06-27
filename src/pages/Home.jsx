@@ -21,20 +21,19 @@ const Home = () => {
 
   return (
     <>
-    
-      <div className="  h-[406px]    ">
-        <img className=" w-[100%]" src={up} />
+
+      <div className="flex relative w-[100%] h-[auto]     ">
+        <img className="w-[100%] h-[auto]" src={up} />
       </div>
       <div className=" h-[406px]   ">
         <div className=" " style={{ position: 'relative', bottom: '60px' }}>
           <Logo />
         </div>
 
-        <div className="pt-[ px] text-primary text-center">
+        <div className="text-primary text-center">
           Discover the best foods from over 1,000 restaurants and fast delivery to your doorstep
         </div>
         <div className="px-[34px] pt-[40px]">
-
           <Login onClick={handleLoginClick}> Login</Login>
         </div>
         <div className="px-[34px] pt-[40px]">

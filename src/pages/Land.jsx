@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <>  
-      <div className="py-[380px] ">
+      <div className="py-[380px]" style={{backgroundImage: 'url(../../../public/assets/backImage.png)'}}>
           <Logo  />
       </div>
     </>

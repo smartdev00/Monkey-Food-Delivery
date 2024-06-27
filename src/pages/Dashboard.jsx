@@ -7,24 +7,15 @@ import Icons from '../components/Icons/Icons'
 import OfferList from './Offers/OfferList'
 import PopularList from '../components/PopularList'
 
-import OfferItem from '../components/Offers/offersItem'
-
 import HomeSlide from '../components/HomeSlide'
 import RecentList from '../components/RecentList'
-
-import MenuItem from '../components/Menu/menuItem'
-
-
 
 import ham from '../../public/assets/img/slide/ham.png'
 import sri from '../../public/assets/img/slide/sri.png'
 import indian from '../../public/assets/img/slide/indian.png'
 import italian from '../../public/assets/img/slide/italian.png'
 
-
-
 const Menu = () => {
-
     return (
         <div className="relative ">
             <div className="px-[22px] ">
@@ -64,7 +55,6 @@ const Menu = () => {
                 </div>
             </div>
             <div className='flex justify-between flex-col gap-4'>
-
                 <RecentList />
             </div>
             <div className="flex pb-[138px] px-[21px]"></div>
