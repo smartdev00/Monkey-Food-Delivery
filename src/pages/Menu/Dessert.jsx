@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
 import SearchBar from "../../components/Search/SearchBar";
-import Icons from '../../components/Icons/Icons'
+
 import Navbar from "../../components/Navbar/Navbar";
 
 import DessertItem from '../../components/Menu/dessertItem'
@@ -26,8 +26,7 @@ const Desserts = () => {
       <DessertItem image={Shake} title={'Street Shake'} rate={4.9} subtitle={'Café Race'} />
       <DessertItem image={Chewy} title={'Fudgy Chewy Brownies'} rate={4.9} subtitle={'Minute by tuk tuk'} />
 
-
-      <div className="flex   pb-[18px] ">  </div>
+      <div className="flex   pb-[138px]  ">  </div>
       <Footer />
     </div>
   );

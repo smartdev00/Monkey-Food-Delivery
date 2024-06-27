@@ -28,7 +28,7 @@ const Menu = () => {
         <Link to='/Promotions'> <MenuItem menuImage={PromotionImage} Name={'Promotions'} counts={25} /> </Link>
       </div>
 
-      <div className="flex pb-[18px] px-[21px]"></div>
+      <div className="flex pb-[138px]  px-[21px]"></div>
       <Footer />
     </div>
   );

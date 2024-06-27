@@ -13,7 +13,6 @@ const RecentList = () => {
 
   return (
     <>
-      
       <RecentItem image = {pizza} title={'Mulberry Pizza by Josh'} rate={4.9} subtitle ={'Café'} product ={'Western Food'} />
       <RecentItem image = {barita} title={'Barita'} rate={4.9} subtitle ={'Café'} product ={'Coffee'}/>
       <RecentItem image = {rush} title={'Pizza Rush Hour'} rate={4.9} subtitle ={'Café'} product ={'Italian Food'}/>

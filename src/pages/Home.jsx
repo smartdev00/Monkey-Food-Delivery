@@ -23,7 +23,7 @@ const Home = () => {
     <>
     
       <div className="  h-[406px]    ">
-        <img className=" " src={up} />
+        <img className=" w-[100%]" src={up} />
       </div>
       <div className=" h-[406px]   ">
         <div className=" " style={{ position: 'relative', bottom: '60px' }}>

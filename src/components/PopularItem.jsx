@@ -15,7 +15,6 @@ const PopularItem = (props) => {
             <Icons type='star-filled' color='orange' />
             <p className="text-[#FC6011]  font-bold  text-[12px] ">{rate}</p>
         </div>
-
     </div>
 </div>
   );

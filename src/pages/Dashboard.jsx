@@ -12,7 +12,7 @@ import OfferItem from '../components/Offers/offersItem'
 import HomeSlide from '../components/HomeSlide'
 import RecentList from '../components/RecentList'
 
-import MenuItem from '../components/Menu/menuItem'
+import MenuItem from '../components/Menu/menuItem111'
 
 
 
@@ -31,11 +31,9 @@ const Menu = () => {
                 <Navbar text="Good morning Akila!" shop="true" />
             </div>
             <div className="flex   flex-col pt-[32px] px-[21px]">
-
                 <SearchBar placeholder=" Search Food" />
-
             </div>
-            <div className="flex justify-start pt-[30px]  gap-[8px] px-[21px]">
+            <div className="flex justify-between pt-[30px]  gap-[8px] px-[21px]">
                 <HomeSlide label="Offers" image={ham} />
                 <HomeSlide label="Sri Lankan" image={sri} />
                 <HomeSlide label="italian" image={italian} />
@@ -49,14 +47,13 @@ const Menu = () => {
             </div>
             <OfferList />
 
-
             <div className="flex justify-between pt-[42px] px-[21px]">
                 <span className="font-bold text-[20px] text-Metropolis">Most Popular</span>
                 <div className="flex items-center gap-[5px]">
                     <span className="font-bold text-[#FC6011] text-[13px] text-Metropolis">View All</span>
                 </div>
             </div>
-            <div className="flex justify-start pt-[30px]  gap-[8px] px-[21px]">
+            <div className="flex justify-space pt-[30px]  gap-[8px] px-[21px]">
                 <PopularList />
             </div>
 
@@ -66,11 +63,11 @@ const Menu = () => {
                     <span className="font-bold text-[#FC6011] text-[13px] text-Metropolis">View All</span>
                 </div>
             </div>
-            <div className='flex flex-col gap-4'>
+            <div className='flex justify-between flex-col gap-4'>
 
                 <RecentList />
             </div>
-            <div className="flex   pb-[138px] px-[21px]"></div>
+            <div className="flex pb-[138px] px-[21px]"></div>
             <Footer />
         </div>
     );
