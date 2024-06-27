@@ -13,7 +13,7 @@ const Offer = () => {
   return (
     <>
 
-      <div className="  elative h-[760px]">
+<div className="  relative ">
         <div className="px-[22px] ">
           <Navbar text="Latest Offers" shop="true" />
         </div>
@@ -31,12 +31,10 @@ const Offer = () => {
         </div>
         <OfferList />
 
-        <div className="flex   pb-[138px] px-[21px]">
-
-        </div>
-      </div>
+        <div className="flex pb-[138px] "></div>
 
       <Footer />
+      </div>
     </>
   );
 };
