@@ -22,7 +22,7 @@ const Menu = () => {
                 <Navbar text="Good morning Akila!" shop="true" />
             </div>
             <div className="flex   flex-col pt-[32px] px-[21px]">
-                <SearchBar placeholder=" Search Food" />
+                <SearchBar placeholder="Search Food" />
             </div>
             <div className="flex justify-between pt-[30px]  gap-[8px] px-[21px]">
                 <HomeSlide label="Offers" image={ham} />
