@@ -17,7 +17,7 @@ const Footer = ({}) => {
   }, []);
   return (
     <>
-      <footer className="absolute bottom-0 w-[100%] left-0">
+      <footer className="fix bottom-0 w-[100%] left-0">
         <div>
           <div className="relative flex items-center px-18">
             <img className="bottom-0" src={Down} />
