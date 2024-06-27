@@ -26,20 +26,9 @@ import italian from '../../public/assets/img/slide/italian.png'
 const Menu = () => {
 
     return (
-        <div>
-            <div className='pt-[21px] px-[21px]'>
-                <Navbar text="Good morning Akila!" />
-            </div>
-
-
-            <div className="flex justify-between pt-[21px] px-[21px]">
-                <span className="font-bold text-[11px] text-Metropolis">Delivering to</span>
-            </div>
-            <div className="flex justify-start pt-[3px]  gap-[24px] px-[21px]">
-                <span className="text-slate-200 font-bold text-[16px] text-Metropolis">Current Location</span>
-                <div className="flex items-center">
-                    <Icons type='arrow-down' color='orange' />
-                </div>
+        <div className="  relative h-[760px]">
+            <div className="px-[22px] ">
+                <Navbar text="Good morning Akila!" shop="true" />
             </div>
             <div className="flex  pt-[32px] px-[21px]">
 
@@ -52,9 +41,6 @@ const Menu = () => {
                 <HomeSlide label="italian" image={italian} />
                 <HomeSlide label="indian" image={indian} />
             </div>
-
-
-
             <div className="flex justify-between pt-[55px] px-[21px]">
                 <span className="font-bold text-[20px] text-Metropolis">Popular Restaurents</span>
                 <div className="flex items-center gap-[5px]">

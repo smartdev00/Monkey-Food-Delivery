@@ -37,7 +37,6 @@ const App = () => {
     <div className="w-[100%] bg-white h-auto">
       <StatusBar/>
       <BrowserRouter>
-      <StatusBar/>
         <Routes>
           <Route path="/button" element={<ButtonShow />} />
           <Route path="/icon" element={<IconsRef />} />
