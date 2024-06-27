@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Footer from '../../../components/Footer'
+import Footer from '../../../components/Footer/Footer'
 import Icons from '../../../components/Icons/Icons';
 import Navbar from '../../../components/Navbar/Navbar';
 import BorderButton from '../../../components/Buttons/BorderButton';

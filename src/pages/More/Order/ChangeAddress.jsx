@@ -1,6 +1,5 @@
 import Navbar from "../../../components/Navbar/Navbar";
-import map from '../../../../public/assets/img/map.png'
-import speech from '../../../../public/assets/img/speech.png'
+import speech from '../../../../public/assets/img/map/speech.png'
 import SearchTextField from "../../../components/TextField/SearchTextField";
 import Icons from "../../../components/Icons/Icons";
 import StarBack from '../../../../public/assets/img/star-back.png'
@@ -13,7 +12,7 @@ const ChangeAddress = () => {
             <div className="px-[21px] pb-[44px] w-[100%]">
                 <Navbar back="true" text="Change Address"/>
             </div>
-            <div className="relative h-[525px] w-[100%] bg-[url('../../../../public/assets/img/map.png')]">
+            <div className="relative h-[525px] w-[100%] bg-[url('../../../../public/assets/img/map/map.png')]">
                 <div className="absolute top-[186px] left-[29px]">
                     <div className="relative">
                         <img src={speech}/>

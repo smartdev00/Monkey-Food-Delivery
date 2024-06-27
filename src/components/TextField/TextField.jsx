@@ -1,35 +1,49 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
 const TextField = (props) => {
-    const { name, type, placeholder, value, onChange } = props;
+  const { name, type, placeholder, disable, autoFocus, error, value, onChange } = props;
 
-    return (
-        <div className='relative'>
-            <input
-                name = { name }
-                type={ type }
-                className='w-[100%] bg-[#f2f2f2] rounded-[999px] text-sm pl-[34px] py-[18px] h-[56px] text-primary'
-                placeholder={placeholder}
-                value = { value }
-                onChange={(e) => onChange(e.target.value)}
-            />
-            {/* <label className='absolute left-[34px] text-[10px] top-5 text-secondary'>{ placeholder }</label> */}
-        </div>
-    );
-}
+  return (
+    <div className="relative">
+      <input
+        name={name}
+        type={type}
+        autoFocus={autoFocus}
+        className="peer w-[100%] bg-[#f2f2f2] rounded-[999px] text-sm px-[34px] align-bottom pt-[12px] h-[56px] text-primary focus:outline-none disabled:bg-opacity-70 disabled:text-opacity-70"
+        style={{
+          border: error === "" || error === undefined ? "" : "1px solid red",
+        }}
+        error={error}
+        disabled={disable}
+        value={value}
+        onChange={onChange}
+      />
+      <label
+        className="peer-focus:-translate-y-[10px] transition-all absolute left-[34px] text-[10px] top-5 text-secondary"
+        style={{
+          transform:
+            value !== undefined && value !== "" ? "translate(0, -10px)" : "",
+        }}
+      >
+        {placeholder}
+      </label>
+    </div>
+  );
+};
 
 TextField.propTypes = {
-    name: PropTypes.string,
-    type: PropTypes.string,
-    placeholder: PropTypes.string,
-    value: PropTypes.string,
-    onChange: PropTypes.func
-}
+  name: PropTypes.string,
+  type: PropTypes.string,
+  placeholder: PropTypes.string,
+  error: PropTypes.string,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
+};
 
 TextField.defaultProps = {
-    type: "text",
-    placeholder: "Text Field"
-}
+  type: "text",
+  placeholder: "Text Field",
+};
 
 export default TextField;

@@ -26,9 +26,9 @@ import ResetPassword from "./pages/auth/ResetPassword";
 import OTP from "./pages/auth/OTP";
 import NewPassword from "./pages/auth/NewPassword";
 import Intro from "./pages/Intro/Intro";
-import Notification from "./pages/More/Notification";
-import AboutUs from "./pages/More/AboutUs";
-import Inbox from "./pages/More/Inbox";
+import Notification from "./pages/More/Notification/Notification";
+import AboutUs from "./pages/More/AboutUs/AboutUs";
+import Inbox from "./pages/More/Inbox/Inbox";
 import MyOrder from "./pages/More/Order/MyOrder";
 import Checkout from "./pages/More/Order/Checkout";
 import ChangeAddress from "./pages/More/Order/ChangeAddress";
@@ -41,7 +41,7 @@ const App = () => {
           <Route path="/button" element={<ButtonShow />} />
           <Route path="/icon" element={<IconsRef />} />
           <Route path="/" element={<Home />}/>
-          <Route path="/Home" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
    
           <Route path="/Land" element={<Land />} />
           <Route path="/Menu" element={<Menu />} />

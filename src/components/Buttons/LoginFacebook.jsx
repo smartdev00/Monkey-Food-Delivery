@@ -1,5 +1,5 @@
 import React from "react";
-import facebook from '../../../public/assets/img/facebook-letter-logo.png'
+import facebook from '../../../public/assets/img/auth/facebook-letter-logo.png'
 
 const LoginFacebook = (props) => {
     const { onClick } = props

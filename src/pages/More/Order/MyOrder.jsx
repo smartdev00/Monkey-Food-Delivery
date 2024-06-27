@@ -1,9 +1,10 @@
-import Footer from "../../../components/Footer";
+import Footer from "../../../components/Footer/Footer";
 import Navbar from "../../../components/Navbar/Navbar";
 import KingBurgers from '../../../../public/assets/img/king-burgers.png'
 import Icons from "../../../components/Icons/Icons";
 import FilledButton from "../../../components/Buttons/FilledButton";
 import { useNavigate } from "react-router";
+import OrderItem from "./OrderItem";
 const MyOrder = () => {
     const navigate = useNavigate()
     return (
@@ -27,26 +28,11 @@ const MyOrder = () => {
                 </div>
             </div>
             <div className="px-[21px] mt-[10px] bg-[#f6f6f6]">
-                <div className="flex justify-between items-center h-[45px] border-b-1px border-opacity-10 border-[#707070]">
-                    <p className="text-[13px] text-primary">Beef Burger x 1</p>
-                    <p className="text-[13px] text-primary font-bold">$16</p>
-                </div>
-                <div className="flex justify-between items-center h-[45px] border-b-1px border-opacity-10 border-[#707070]">
-                    <p className="text-[13px] text-primary">Classic Burger x 1</p>
-                    <p className="text-[13px] text-primary font-bold">$14</p>
-                </div>
-                <div className="flex justify-between items-center h-[45px] border-b-1px border-opacity-10 border-[#707070]">
-                    <p className="text-[13px] text-primary">Cheese Chicken Burger x 1</p>
-                    <p className="text-[13px] text-primary font-bold">$17</p>
-                </div>
-                <div className="flex justify-between items-center h-[45px] border-b-1px border-opacity-10 border-[#707070]">
-                    <p className="text-[13px] text-primary">Chicken Legs Basket x 1</p>
-                    <p className="text-[13px] text-primary font-bold">$15</p>
-                </div>
-                <div className="flex justify-between items-center h-[45px] border-b-1px border-opacity-10 border-[#707070]">
-                    <p className="text-[13px] text-primary">French Fries Large x 1</p>
-                    <p className="text-[13px] text-primary font-bold">$6</p>
-                </div>
+                <OrderItem goodName="Beef Burger x 1" goodPrice="$16"/>
+                <OrderItem goodName="Classic Burger x 1" goodPrice="$14"/>
+                <OrderItem goodName="Cheese Chicken Burger x 1" goodPrice="$17"/>
+                <OrderItem goodName="Chicken Legs Basket x 1" goodPrice="$15"/>
+                <OrderItem goodName="French Fries Large x 1" goodPrice="$6"/>
             </div>
             <div className="px-[21px]">
                 <div className="flex justify-between items-center h-[50px] border-b-1px border-opacity-10 border-[#707070]">
