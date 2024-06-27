@@ -26,7 +26,7 @@ import italian from '../../public/assets/img/slide/italian.png'
 const Menu = () => {
 
     return (
-        <div className="  relative h-[760px]">
+        <div className="relative h-[760px]">
             <div className="px-[22px] ">
                 <Navbar text="Good morning Akila!" shop="true" />
             </div>

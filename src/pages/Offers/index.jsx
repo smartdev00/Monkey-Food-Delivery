@@ -37,7 +37,7 @@ const Offer = () => {
       </div>
 
       <Footer />
-    </div>
+    </>
   );
 };
 
