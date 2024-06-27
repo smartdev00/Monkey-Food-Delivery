@@ -12,7 +12,7 @@ import OfferItem from '../components/Offers/offersItem'
 import HomeSlide from '../components/HomeSlide'
 import RecentList from '../components/RecentList'
 
-import MenuItem from '../components/Menu/menuItem111'
+import MenuItem from '../components/Menu/menuItem'
 
 
 
