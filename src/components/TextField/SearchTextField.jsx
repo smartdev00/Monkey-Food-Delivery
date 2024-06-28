@@ -10,10 +10,10 @@ const SearchTextField = (props) => {
             <input
                 name = { name }
                 type={ type }
-                className='w-[100%] bg-[#f2f2f2] rounded-[99px] text-sm pl-[54px] py-[13px] h-[45px] text-primary'
+                className='w-[100%] bg-[#f2f2f2] rounded-[99px] text-sm pl-[54px] py-[13px] h-[45px] text-primary focus:outline-none'
                 placeholder={placeholder}
                 value = { value }
-                onChange={(e) => onChange(e.target.value)}
+                onChange={onChange}
             />
             <div className='absolute top-3 left-5 '>
                 <Icons type="lens" color="gray"/>

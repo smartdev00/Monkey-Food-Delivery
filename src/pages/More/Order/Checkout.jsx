@@ -2,7 +2,7 @@ import Navbar from "../../../components/Navbar/Navbar";
 import visa from "../../../../public/assets/img/visa-payment.png";
 import emailPayment from "../../../../public/assets/img/payment-email.png";
 import FilledButton from "../../../components/Buttons/FilledButton";
-import Footer from "../../../components/Footer";
+import Footer from "../../../components/Footer/Footer";
 import { useState } from "react";
 import AddCardModal from "../PaymentDetails/AddCardModal";
 import CompletePay from "../PaymentDetails/CompletePay";
@@ -33,27 +33,30 @@ const Checkout = () => {
         <div className="flex flex-col gap-[13px] pt-[16px] pb-[24px]  px-[21px] bg-white">
           <div className="flex justify-between items-center">
             <p className="text-[13px] text-secondary">Payment method</p>
-            <p className="text-[13px] text-main font-bold cursor-pointer"onClick={() => setIsModalShow(true)}>
+            <p
+              className="text-[13px] text-main font-bold cursor-pointer"
+              onClick={() => setIsModalShow(true)}
+            >
               <span className="text-xl font-extrabold">+</span> Add Card
             </p>
           </div>
           <div className="flex justify-between items-center pl-[21px] pr-[12px] py-[14px] bg-[#f6f6f6]">
             <p className="text-xs text-[#2d2d2d]">Cash on delivery</p>
-            <div className="border-1px w-[14px] h-[14px] border-main rounded-[50%]" />
+            <RadioButton name="paymentMethod" />
           </div>
           <div className="flex justify-between items-center pl-[21px] pr-[12px] py-[14px] bg-[#f6f6f6]">
             <p className="flex items-center gap-[5px] text-xs text-[#2d2d2d]">
               <img src={visa} />
               **** **** **** 2187
             </p>
-            <div className="border-1px w-[14px] h-[14px] border-main rounded-[50%]" />
+            <RadioButton name="paymentMethod" />
           </div>
           <div className="flex justify-between items-center pl-[21px] pr-[12px] py-[14px] bg-[#f6f6f6]">
             <p className="flex items-center gap-[5px] text-xs text-[#2d2d2d]">
               <img src={emailPayment} />
               johndoe@email.com
             </p>
-            <div className="border-1px w-[14px] h-[14px] border-main rounded-[50%]" />
+            <RadioButton name="paymentMethod" />
           </div>
         </div>
 
@@ -78,13 +81,14 @@ const Checkout = () => {
           </div>
         </div>
         <div className="bg-white p-[21px] h-[200px]">
-          <FilledButton onClick={()=>setIsPayShow(true)}>Send Order</FilledButton>
+          <FilledButton onClick={() => setIsPayShow(true)}>
+            Send Order
+          </FilledButton>
         </div>
       </div>
       <Footer />
-      <AddCardModal isShow={isModalShow} setIsShow={setIsModalShow}/>
-      <CompletePay isShow={isPayShow} setIsShow={setIsPayShow}/>
-
+      <AddCardModal isShow={isModalShow} setIsShow={setIsModalShow} />
+      <CompletePay isShow={isPayShow} setIsShow={setIsPayShow} />
     </div>
   );
 };

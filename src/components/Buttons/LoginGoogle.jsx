@@ -1,5 +1,5 @@
 import React from "react";
-import google from '../../../public/assets/img/google-plus-logo.png'
+import google from '../../../public/assets/img/auth/google-plus-logo.png'
 
 const LoginGoogle = (props) => {
     const { onClick } = props

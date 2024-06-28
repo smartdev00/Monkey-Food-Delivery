@@ -1,74 +1,51 @@
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
-import SearchBar from "../components/Search/SearchBar";
+import Footer from "../components/Footer/Footer";
+import SearchBar from "../components/TextField/SearchTextField";
 import Navbar from '../components/Navbar/Navbar';
+import TitleBar from '../components/Home/Title'
 
-import Icons from '../components/Icons/Icons'
-import OfferList from './Offers/OfferList'
-import PopularList from '../components/PopularList'
+import PopularList from '../components/Home/PopularList'
+import HomeSlideList from '../components/Home/HomeSlideList'
+import RecentList from '../components/Home/RecentList'
 
-import OfferItem from '../components/Offers/offersItem'
-
-import HomeSlide from '../components/HomeSlide'
-import RecentList from '../components/RecentList'
-
-import MenuItem from '../components/Menu/menuItem'
-
-
-
-import ham from '../../public/assets/img/slide/ham.png'
-import sri from '../../public/assets/img/slide/sri.png'
-import indian from '../../public/assets/img/slide/indian.png'
-import italian from '../../public/assets/img/slide/italian.png'
-
-
+import OfferList from '../components/Offers/OfferList'
 
 const Menu = () => {
-
     return (
-        <div className="relative flex flex-col items-stretch ">
-            <div className="px-[22px] ">
+        <div className="relative ">
+            <div className="px-[21px]">
                 <Navbar text="Good morning Akila!" shop="true" />
             </div>
-            <div className="flex   flex-col pt-[32px] px-[21px]">
-                <SearchBar placeholder=" Search Food" />
+            <div className="flex flex-col pt-[32px] px-[21px]">
+                <SearchBar placeholder="Search Food" />
             </div>
-            <div className="flex justify-between pt-[30px]  gap-[8px] px-[21px] self-stretch">
-                <HomeSlide label="Offers" image={ham} />
-                <HomeSlide label="Sri Lankan" image={sri} />
-                <HomeSlide label="italian" image={italian} />
-                <HomeSlide label="indian" image={indian} />
+            <div className="flex overflow-scroll justify-start pt-[30px] gap-[8px] px-[21px]">
+                <HomeSlideList />
             </div>
+
             <div className="flex justify-between pt-[55px] px-[21px]">
-                <span className="font-bold text-[20px] text-Metropolis">Popular Restaurents</span>
-                <div className="flex items-center gap-[5px]">
-                    <span className="font-bold text-[#FC6011] text-[13px] text-Metropolis">View All</span>
-                </div>
+                <TitleBar titileName="Popular Restaurents" vAll='View All' />
             </div>
+
             <OfferList />
 
-
             <div className="flex justify-between pt-[42px] px-[21px]">
-                <span className="font-bold text-[20px] text-Metropolis">Most Popular</span>
-                <div className="flex items-center gap-[5px]">
-                    <span className="font-bold text-[#FC6011] text-[13px] text-Metropolis">View All</span>
-                </div>
+                <TitleBar titileName='Most Popular' vAll='View All' />
             </div>
-            <div className="flex justify-start pt-[30px]  gap-[8px] px-[21px]">
+
+            <div className="flex overflow-scroll pt-[30px]  gap-[8px] px-[21px]">
                 <PopularList />
             </div>
 
             <div className="flex justify-between pt-[37px] px-[21px]">
-                <span className="font-bold text-[20px] text-Metropolis">Recent Items</span>
-                <div className="flex items-center gap-[5px]">
-                    <span className="font-bold text-[#FC6011] text-[13px] text-Metropolis">View All</span>
-                </div>
+                <TitleBar titileName='Recent Items' vAll='View All' />
             </div>
-            <div className='flex flex-col gap-4'>
 
+            <div className='flex justify-between flex-col gap-4'>
                 <RecentList />
             </div>
-            <div className="flex   pb-[138px] px-[21px]"></div>
+
+            <div className="flex pb-[138px] px-[21px]" />
             <Footer />
         </div>
     );
