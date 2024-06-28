@@ -12,7 +12,7 @@ const Navbar = (props) => {
     <div className="flex items-center justify-between mt-[30px]">
       <div className="flex items-center gap-5">
         {back ? (
-          <div onClick={() => onHandlePreviousClick()}>
+          <div className="hover:cursor-pointer" onClick={() => onHandlePreviousClick()}>
             {" "}
             <Icons type="arrow-left" color="gray" />
           </div>
@@ -25,7 +25,7 @@ const Navbar = (props) => {
       </div>
 
       {shop ? (
-        <div onClick={() => navigate("/order")}>
+        <div className="hover:cursor-pointer" onClick={() => navigate("/order")}>
           <Icons type="shopping-cart" color="gray" />{" "}
         </div>
       ) : (

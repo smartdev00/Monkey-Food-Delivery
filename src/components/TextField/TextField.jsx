@@ -2,7 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const TextField = (props) => {
-  const { name, type, placeholder, disable, autoFocus, error, value, onChange } = props;
+  const {
+    name,
+    type,
+    placeholder,
+    disable,
+    autoFocus,
+    error,
+    value,
+    onChange,
+  } = props;
+
+  let isValid = error === "" || error === undefined
 
   return (
     <div className="relative">
@@ -20,13 +31,13 @@ const TextField = (props) => {
         onChange={onChange}
       />
       <label
-        className="peer-focus:-translate-y-[10px] transition-all absolute left-[34px] text-[10px] top-5 text-secondary"
+        className={`peer-focus:-translate-y-[10px] transition-all absolute left-[34px] text-[12px] top-5 ${isValid ? "text-secondary" : "text-[#ff0000]"}`}
         style={{
           transform:
             value !== undefined && value !== "" ? "translate(0, -10px)" : "",
         }}
       >
-        {placeholder}
+        { isValid ? placeholder : error}
       </label>
     </div>
   );

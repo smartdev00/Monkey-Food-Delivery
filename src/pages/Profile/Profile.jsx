@@ -16,27 +16,30 @@ const Profile = () => {
     password: "123123123",
     confirmPassword: "123123123",
   });
-  const [editable, setEditable] = useState(false)
+  const [editable, setEditable] = useState(false);
 
   const handlePersonalChange = (e) => {
     setPersonalData({ ...personalData, [e.target.name]: e.target.value });
   };
 
   const handleEditClick = () => {
-    setEditable(true)
-  }
+    setEditable(true);
+  };
 
   const handleSaveClick = () => {
-    setEditable(false)
-  }
-  
+    setEditable(false);
+  };
+
   return (
     <div className="relative h-[996px]">
       <div className="px-[21px]">
         <Navbar text="Profile" shop="true" />
         <div className="flex flex-col justify-center items-center mb-[47px] mt-[30px]">
           <img src={avatar} />
-          <div className="flex items-center gap-[7px] mt-[18px] mb-[11px]" onClick={() => handleEditClick()}>
+          <div
+            className="flex items-center gap-[7px] mt-[18px] mb-[11px] hover:cursor-pointer"
+            onClick={() => handleEditClick()}
+          >
             <Icons type="pen" color="orange" />
             <span className="text-main text-[10px]">Edit Profile</span>
           </div>
@@ -94,9 +97,7 @@ const Profile = () => {
             type="password"
             onChange={(e) => handlePersonalChange(e)}
           />
-          <FilledButton onClick={() => handleSaveClick()}>
-            Save
-          </FilledButton>
+          <FilledButton onClick={() => handleSaveClick()}>Save</FilledButton>
         </div>
       </div>
       <Footer />

@@ -20,21 +20,76 @@ const SignUp = () => {
     address: "",
     password: "",
     confirmPassword: "",
-  })
+  });
 
   const navigate = useNavigate();
 
   const handleDataChange = (e) => {
     setPersonalData({ ...personalData, [e.target.name]: e.target.value });
-    setError({...error, [e.target.name]: ""})
+    setError({ ...error, [e.target.name]: "" });
+  };
+
+  const validatePersonalData = (data) => {
+    let isValid = false;
+    if (data.name === "") {
+      setError((previousState) => {
+        return { ...previousState, name: "You must type in the name!" };
+      });
+    }
+    if (data.email === "") {
+      setError((previousState) => {
+        return { ...previousState, email: "You must type in the email!" };
+      });
+    }
+    if (data.mobileNo === "") {
+      setError((previousState) => {
+        return {
+          ...previousState,
+          mobileNo: "You must type in the Mobile No!",
+        };
+      });
+    }
+    if (data.address === "") {
+      setError((previousState) => {
+        return { ...previousState, address: "You must type in the address!" };
+      });
+    }
+    if (data.password === "") {
+      setError((previousState) => {
+        return { ...previousState, password: "You must type in the password!" };
+      });
+    }
+    if (data.confirmPassword === "") {
+      setError((previousState) => {
+        return {
+          ...previousState,
+          confirmPassword: "You must type in the confirm password!",
+        };
+      });
+    } else if (data.password !== data.confirmPassword) {
+      setError((previousState) => {
+        return {
+          ...previousState,
+          confirmPassword: "Passwords are not matched!",
+        };
+      });
+    }
+
+    if (
+      personalData.name !== "" &&
+      personalData.email !== "" &&
+      personalData.mobileNo !== "" &&
+      personalData.address !== "" &&
+      personalData.password !== "" &&
+      personalData.confirmPassword !== "" &&
+      personalData.password === personalData.confirmPassword
+    )
+      isValid = true;
+    return isValid;
   };
 
   const handleSignUpClick = () => {
-    if(personalData.name === ""){
-      setError({...error, name: "Type your name!"})
-    }
-    else
-      navigate("/intro");
+    if (validatePersonalData(personalData)) navigate("/intro");
   };
 
   return (
@@ -56,7 +111,7 @@ const SignUp = () => {
         <TextField
           name="email"
           placeholder="Email"
-          type="text"
+          type="email"
           error={error.email}
           value={personalData.email}
           onChange={(e) => handleDataChange(e)}
@@ -80,7 +135,7 @@ const SignUp = () => {
         <TextField
           name="password"
           placeholder="Password"
-          type="text"
+          type="password"
           error={error.password}
           value={personalData.password}
           onChange={(e) => handleDataChange(e)}
@@ -88,12 +143,12 @@ const SignUp = () => {
         <TextField
           name="confirmPassword"
           placeholder="Confirm Password"
-          type="text"
+          type="password"
           error={error.confirmPassword}
           value={personalData.confirmPassword}
           onChange={(e) => handleDataChange(e)}
         />
-        <FilledButton onClick={handleSignUpClick}>Sign Up</FilledButton>
+        <FilledButton onClick={() => handleSignUpClick()}>Sign Up</FilledButton>
       </div>
       <p className="text-sm mt-6 text-secondary">
         Already have an Account?{" "}
