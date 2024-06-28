@@ -3,9 +3,7 @@ const HomeSlide = ({ label, image }) => {
     return (
         <>
             <div className='flex flex-col    '>
-                <div className=' flex justify-center  '>
-                    <img className="  w-[124px]   " src={image}  />
-                </div>
+                    <img className="  h-[124px] min-w-[124px]   " src={image}  />
                 <div className='flex justify-center'>
                     {label}
                 </div>

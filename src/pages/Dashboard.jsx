@@ -35,10 +35,17 @@ const Menu = () => {
                 <SearchBar placeholder=" Search Food" />
 
             </div>
-            <div className="flex justify-start pt-[30px]  gap-[8px] px-[21px]">
+            <div className="flex justify-start pt-[30px]  gap-[8px] px-[21px] overflow-scroll ">
                 <HomeSlide label="Offers" image={ham} />
                 <HomeSlide label="Sri Lankan" image={sri} />
                 <HomeSlide label="italian" image={italian} />
+                <HomeSlide label="indian" image={indian} />
+                <HomeSlide label="indian" image={indian} />
+                <HomeSlide label="indian" image={indian} />
+                <HomeSlide label="indian" image={indian} />
+                <HomeSlide label="indian" image={indian} />
+                <HomeSlide label="indian" image={indian} />
+                <HomeSlide label="indian" image={indian} />
                 <HomeSlide label="indian" image={indian} />
             </div>
             <div className="flex justify-between pt-[55px] px-[21px]">
