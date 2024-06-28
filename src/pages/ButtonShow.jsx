@@ -8,6 +8,7 @@ import MapCurrentTarget from '../components/map/MapCurrentTarget';
 import TextField from '../components/TextField/TextField';
 
 import { useState } from 'react';
+import RadioButton from '../components/Buttons/RadioButton';
 
 const ButtonShow = () => {
     const [ rate, setRate ] = useState(0)
@@ -17,7 +18,7 @@ const ButtonShow = () => {
     }
     return (
         <div>
-            <BorderButton>Border Button</BorderButton>
+            {/* <BorderButton>Border Button</BorderButton>
             <FilledButton>Filled Button</FilledButton>
             <p>Border & Filled Button Mannual: Yon can pass button click handle by using onClick props. And the way of naming the button name is same as the general way.</p><br/>
             <LoginFacebook/>
@@ -28,7 +29,8 @@ const ButtonShow = () => {
             <p>StarRating Mannual: You can set the value by using value props and you have to pass the function of changing the value by using setValue props.</p>
             <MapCurrentPoint top="600px"/>
             <MapCurrentTarget  top="600px" left="200px"/><br/>
-            <p>Map Mannual: Yon can change the position of these components by using top, left props.</p>
+            <p>Map Mannual: Yon can change the position of these components by using top, left props.</p> */}
+            <RadioButton/>
         </div>
     );
 }

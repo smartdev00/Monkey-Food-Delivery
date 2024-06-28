@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom"
-import Footer from "../../components/Footer"
-import SearchBar from "../../components/Search/SearchBar"
- import MenuItem from '../../components/Menu/menuItem'
-import Navbar from '../../components/Navbar/Navbar'
+import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
+import SearchBar from "../../components/Search/SearchBar";
+import Icons from '../../components/Icons/Icons'
+import MenuItem from '../../components/Menu/menuItem'
+import Navbar from '../../components/Navbar/Navbar';
 
 import FoodImage from '../../../public/assets/img/menu/food.svg'
 import BeverageImage from '../../../public/assets/img/menu/beverage.svg'
