@@ -37,6 +37,9 @@ export default {
         "31px": "31px",
         "124px": "124px",
       },
+      backgroundImage: {
+        "pizza-back": "url('/public/assets/img/menu/pizza.png')",
+      },
     },
     padding: {
       "108px": "108px",

@@ -43,7 +43,7 @@ const Intro = () => {
     );
   }
   const handleNextClick = () => {
-    if (pageNumber === 3) navigate("/login");
+    if (pageNumber === 3) navigate("/auth/login");
     setPageNumber(pageNumber + 1);
   };
   return (

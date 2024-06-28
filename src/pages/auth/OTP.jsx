@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const OTP = () => {
   const navigate = useNavigate();
   const handleNextClick = () => {
-    navigate("/newpassword");
-  };
+    navigate("/auth/login/newpassword")
+  }
   return (
     <div className="flex flex-col items-center px-[21px] h-[790px] relative">
       <p className="text-[25px] mt-[38px] mb-3 text-center text-primary">
@@ -41,10 +41,8 @@ const OTP = () => {
         <FilledButton onClick={handleNextClick}>Next</FilledButton>
       </div>
       <p className="text-sm mt-8 text-secondary">
-        Didn't Receive?{" "}
-        <Link to="/resetpassword" className="font-bold text-main">
-          Click Here
-        </Link>
+        Didn't Receive?{" "} 
+        <Link to="/auth/login/resetpassword" className="font-bold text-main">Click Here</Link>
       </p>
       <div className="absolute bottom-3 w-[119px] border-[2.5px] rounded-full border-primary" />
     </div>

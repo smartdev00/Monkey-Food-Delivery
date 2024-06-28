@@ -14,7 +14,7 @@ const Offer = () => {
         <Navbar text="Latest Offers" shop="true" />
       </div>
 
-      <div className="flex justify-between  px-[21px]">
+      <div className="flex justify-between pt-[16px] px-[21px]">
         <div className="flex items-start gap-[5px]">
           <span className=" text-[14px]">
             Find discounts, Offers special meals and more!

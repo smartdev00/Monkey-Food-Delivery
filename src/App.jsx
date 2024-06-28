@@ -32,38 +32,43 @@ import Inbox from "./pages/More/Inbox/Inbox";
 import MyOrder from "./pages/More/Order/MyOrder";
 import Checkout from "./pages/More/Order/Checkout";
 import ChangeAddress from "./pages/More/Order/ChangeAddress";
+import FoodDetail from "./pages/Menu/FoodDetail";
 const App = () => {
   return (
-    <div className="w-[100%] bg-white h-auto">
+    <div className="w-[100%] min-w-[280px] bg-white h-auto">
       <StatusBar/>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/button" element={<ButtonShow />} />
           <Route path="/icon" element={<IconsRef />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/logo" element={<Logo />} />
+          
+          <Route path="/auth/signup" element={<SignUp />} />
+          <Route path="/auth/login" element={<Login />} />
+          <Route path="/auth/login/resetpassword" element={<ResetPassword />} />
+          <Route path="/auth/login/resetpassword/otp" element={<OTP />} />
+          <Route path="/auth/login/newpassword" element={<NewPassword />} />
+          
           <Route path="/dashboard" element={<Dashboard />} />
-   
-          <Route path="/Land" element={<Land />} />
-          <Route path="/Menu" element={<Menu />} />
-          <Route path="/Logo" element={<Logo />} />
-          <Route path="/Menu/Desserts" element={<Dessert />} />
-
-          <Route path="/More" element={<More />} />
-          <Route path="/payment-details" element={<PaymentDetails />} />
-          <Route path="/Offers" element={<Offers />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/resetpassword" element={<ResetPassword />} />
-          <Route path="/otp" element={<OTP />} />
-          <Route path="/newpassword" element={<NewPassword />} />
+          <Route path="/land" element={<Land />} />
           <Route path="/intro" element={<Intro />} />
-          <Route path="/notification" element={<Notification />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/inbox" element={<Inbox />} />
-          <Route path="/order" element={<MyOrder />} />
-          <Route path="/checkout" element={<Checkout />} />
-          <Route path="/changeaddress" element={<ChangeAddress />} />
+
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/menu/desserts" element={<Dessert />} />
+          <Route path="/menu/food-details" element={<FoodDetail />} />
+          
+          <Route path="/offers" element={<Offers />} />
+          <Route path="/profile" element={<Profile />} />
+
+          <Route path="/more" element={<More />} />
+          <Route path="/more/payment-details" element={<PaymentDetails />} />
+          <Route path="/more/notification" element={<Notification />} />
+          <Route path="/more/aboutus" element={<AboutUs />} />
+          <Route path="/more/inbox" element={<Inbox />} />
+          <Route path="/more/order" element={<MyOrder />} />
+          <Route path="/more/order/checkout" element={<Checkout />} />
+          <Route path="/more/order/checkout/changeaddress" element={<ChangeAddress />} />
             {/* <Route path="/auth" element={<Authentication />} />
             <Route path="/" element={<Home />} />
             <Route path="/create-post" element={<CreatePost />} />

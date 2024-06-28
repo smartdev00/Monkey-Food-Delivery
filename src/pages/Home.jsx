@@ -1,7 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 
 import Line from '../components/Line'
-
 import Logo from '../components/Logo'
 import Login from '../components/Buttons/FilledButton'
 import SignUP from '../components/Buttons/BorderButton'
@@ -11,15 +10,15 @@ import upImage from '../../public/assets/img/up.png'
 const Home = () => {
   const navigate = useNavigate()
   const handleLoginClick = () => {
-    navigate("/login")
+    navigate("/auth/login")
   }
 
   const handleSignUpClick = () => {
-    navigate("/signup")
+    navigate("/auth/signup")
   }
 
   return (
-    <>
+    <div>
       <div className="  relative   ">
         <img className=" w-[100%] h-[392px] " src={upImage} />
       </div>
@@ -39,7 +38,7 @@ const Home = () => {
           <Line />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
