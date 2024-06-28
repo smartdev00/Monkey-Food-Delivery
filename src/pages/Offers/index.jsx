@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import Icons from "../../components/Icons/Icons";
 import Check from "../../components/Buttons/FilledButton";
 
-import OfferList from "./OfferList";
+import OfferList from "../../components/Offers/OfferList";
 
 const Offer = () => {
   return (
@@ -26,8 +26,7 @@ const Offer = () => {
       </div>
       <OfferList />
 
-        <div className="flex pb-[11px] "></div>
-
+      <div className="flex pb-[138px] " />
       <Footer />
     </div>
   );
