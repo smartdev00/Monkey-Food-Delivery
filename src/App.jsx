@@ -32,6 +32,7 @@ import Inbox from "./pages/More/Inbox";
 import MyOrder from "./pages/More/Order/MyOrder";
 import Checkout from "./pages/More/Order/Checkout";
 import ChangeAddress from "./pages/More/Order/ChangeAddress";
+import FoodDetail from "./pages/Menu/FoodDetail";
 const App = () => {
   return (
     <div className="w-[100%] min-w-[280px] bg-white h-auto">
@@ -55,6 +56,7 @@ const App = () => {
 
           <Route path="/menu" element={<Menu />} />
           <Route path="/menu/desserts" element={<Dessert />} />
+          <Route path="/menu/food-details" element={<FoodDetail />} />
           
           <Route path="/offers" element={<Offers />} />
           <Route path="/profile" element={<Profile />} />

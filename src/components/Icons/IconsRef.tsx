@@ -3,7 +3,7 @@ import Icons from './Icons'
 import { IconType, ColorType } from '../../constants';
 
 let iconType: Array<IconType> = ["shopping-cart", "arrow-down", "arrow-right", "arrow-left", "lens", "star-filled", "star-border", "heart-filled", "heart-border", 
-  "pen", "income", "shopping-bag", "bell", "mail", "info", "tick", "plus", "map-pointer", "menu", "offer", "profile", "more"];
+  "pen", "income", "shopping-bag", "bell", "mail", "info", "tick", "plus", "map-pointer", "menu", "offer", "profile", "more", "add-cart"];
 let colorType: Array<ColorType> = ["gray", "orange"];
 
 export default function IconsRef(){
