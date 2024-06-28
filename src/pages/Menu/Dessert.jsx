@@ -27,9 +27,7 @@ const Desserts = () => {
       <DessertItem image={Chewy} title={'Fudgy Chewy Brownies'} rate={4.9} subtitle={'Minute by tuk tuk'} />
 
 
-      <div className="flex   pb-[138px] px-[21px]">
-
-      </div>
+      <div className="flex   pb-[18px] ">  </div>
       <Footer />
     </div>
   );

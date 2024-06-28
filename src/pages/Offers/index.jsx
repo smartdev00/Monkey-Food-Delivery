@@ -26,7 +26,7 @@ const Offer = () => {
       </div>
       <OfferList />
 
-      <div className="flex pb-[138px] "></div>
+        <div className="flex pb-[11px] "></div>
 
       <Footer />
     </div>

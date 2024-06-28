@@ -17,7 +17,6 @@ const OfferList = () => {
       <OfferItem image = {IssoImage} title={'Isso'} rate={4.9} subtitle ={'(124 ratings) Café'}/>
       <OfferItem image = {BeanImage} title={'Cafe Beans'} rate={4.9} subtitle ={'(124 ratings) Café'}/>
 
-      <Footer />
     </>
   );
 };

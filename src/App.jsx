@@ -40,8 +40,8 @@ const App = () => {
         <Routes>
           <Route path="/button" element={<ButtonShow />} />
           <Route path="/icon" element={<IconsRef />} />
-          <Route path="/" element={<Home />}/>
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Dashboard />} />
    
           <Route path="/Land" element={<Land />} />
           <Route path="/Menu" element={<Menu />} />

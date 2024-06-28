@@ -21,14 +21,14 @@ const Menu = () => {
         <SearchBar placeholder=" Search Food" />
       </div>
 
-      <div className="flex flex-col h-[480px]   bg-no-repeat bg-contain " style={{ backgroundImage: "url(../../../public/assets/img/side.svg)" }}>
+      <div className="flex flex-col h-[520px]   bg-no-repeat bg-contain " style={{ backgroundImage: "url(../../../public/assets/img/side.svg)" }}>
         <Link to='/Food'><MenuItem menuImage={FoodImage} Name={'Food'} counts={120} />  </Link>
         <Link to='/Beverage'>  <MenuItem menuImage={BeverageImage} Name={'Beverage'} counts={220} />   </Link>
         <Link to='/Menu/Desserts'> <MenuItem menuImage={DessertImage} Name={'Desserts'} counts={150} />  </Link>
         <Link to='/Promotions'> <MenuItem menuImage={PromotionImage} Name={'Promotions'} counts={25} /> </Link>
       </div>
 
-      <div className="flex pb-[138px] px-[21px]"></div>
+      <div className="flex pb-[18px] px-[21px]"></div>
       <Footer />
     </div>
   );
