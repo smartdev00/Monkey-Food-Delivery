@@ -3,7 +3,7 @@ import Icons from '../../components/Icons/Icons'
 
 const DessertItem = (props) => {
     const { title, image, subtitle, rate } = props;
-console.log(image)
+
     return (
         <div className=" relative pt-[2px] ">
             <div className="flex flex-col bg-no-repeat bg-cover "

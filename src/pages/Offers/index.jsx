@@ -9,7 +9,7 @@ import OfferList from "../../components/Offers/OfferList";
 
 const Offer = () => {
   return (
-    <div className="  relative ">
+    <div className="relative ">
       <div className="px-[22px] ">
         <Navbar text="Latest Offers" shop="true" />
       </div>

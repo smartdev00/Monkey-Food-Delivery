@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
-import SearchBar from "../components/Search/SearchBar";
+import SearchBar from "../components/TextField/SearchTextField";
 import Navbar from '../components/Navbar/Navbar';
 import TitleBar from '../components/Home/Title'
 
@@ -13,7 +13,7 @@ import OfferList from '../components/Offers/OfferList'
 const Menu = () => {
     return (
         <div className="relative ">
-            <div className="pr-[21px]">
+            <div className="px-[21px]">
                 <Navbar text="Good morning Akila!" shop="true" />
             </div>
             <div className="flex flex-col pt-[32px] px-[21px]">
