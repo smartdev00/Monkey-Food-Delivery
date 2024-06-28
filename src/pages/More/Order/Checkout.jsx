@@ -28,7 +28,7 @@ const Checkout = () => {
               Briijkyn, NY 11216
             </p>
           </div>
-          <p className="text-[13px] text-main font-bold mt-[30px]" onClick={()=>navigate("changeaddress")}>Change</p>
+          <p className="text-[13px] text-main font-bold mt-[30px]" onClick={()=>navigate("/asdfa/dchangeaddress")}>Change</p>
         </div>
         <div className="flex flex-col gap-[13px] pt-[16px] pb-[24px]  px-[21px] bg-white">
           <div className="flex justify-between items-center">
