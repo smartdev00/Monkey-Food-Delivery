@@ -152,9 +152,7 @@ const SignUp = () => {
       </div>
       <p className="text-sm mt-6 text-secondary">
         Already have an Account?{" "}
-        <Link to="/login" className="font-bold text-main">
-          Login
-        </Link>
+        <Link to="/auth/login" className="font-bold text-main">Login</Link>
       </p>
       <div className="absolute w-[119px] border-[2.5px] rounded-full bottom-3 border-primary" />
     </div>

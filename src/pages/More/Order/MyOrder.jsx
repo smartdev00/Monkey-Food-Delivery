@@ -60,7 +60,7 @@ const MyOrder = () => {
           <p className="text-[13px] text-primary font-bold">Total</p>
           <p className="text-[22px] text-main font-bold">$70</p>
         </div>
-        <FilledButton onClick={() => navigate("/checkout")}>
+        <FilledButton onClick={() => navigate("/more/order/checkout")}>
           Checkout
         </FilledButton>
       </div>

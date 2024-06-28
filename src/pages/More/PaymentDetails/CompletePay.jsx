@@ -1,27 +1,19 @@
 import React, { useState } from 'react'
 import FilledButton from  '../../../components/Buttons/FilledButton';
-import TextField from '../../../components/TextField/TextField';
-import Icons from '../../../components/Icons/Icons';
-import { useSearchParams } from 'react-router-dom';
 import purseImg from '../../../../public/assets/img/purse.png';
+import { useNavigate } from 'react-router-dom';
 
 export default function CompletePay({isShow, setIsShow}) {
+  const navigate = useNavigate()
   const handleToggleBtn = () => {
     
   }
   const handleAddCard = () => {
 
   }
-  const [cardNum, setCardNum] = useState('');
-  const [month, setMonth] = useState('');
-  const [year, setYear] = useState('');
-  const [secureCode, setSecureCode] = useState('');
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [removable, setRemovable] = useState(false);
 
   return (
-    <div className={`bg-[#000]/[0.45] flex flex-col justify-end w-[100%] h-[100vh] absolute bottom-0 ${isShow?'block':'hidden'}`}>
+    <div className={`bg-[#000]/[0.45] flex flex-col justify-end w-[100%] h-[100vh] fixed bottom-0 ${isShow?'flex':'hidden'}`}>
       <div className='bg-white flex flex-col items-stretch h-full rounded-tl-[18px] rounded-tr-[18px] pt-[38px] pb-[50px] px-[21px] relative border-b-[2px] border-icongray-50 border-solid justify-stretch'>
         <div className='flex justify-center items-center'>
           <img src={purseImg} alt='purse' className='w-[224px] h-[254px]' />
@@ -35,7 +27,7 @@ export default function CompletePay({isShow, setIsShow}) {
           <FilledButton onClick={(e) => handleAddCard}>
             Track My Order
           </FilledButton>
-          <div className='text-icongray-50 text-base font-bold flex justify-center'>Back To Home</div>
+          <div className='text-icongray-50 text-base font-bold flex justify-center' onClick={()=>navigate("/dashboard")}>Back To Home</div>
         </div>
         <div className="absolute bottom-2 self-center w-[119px] border-[2.5px] rounded-[999px] border-primary" />
       </div>

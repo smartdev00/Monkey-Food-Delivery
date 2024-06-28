@@ -271,6 +271,26 @@ export default function Icons({type, color}: Icon){
         </span>
       );
       break;
+    case "add-cart":
+      content = (
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16.255" height="12.814" viewBox="0 0 16.255 12.814">
+            <g id="Group_8089" data-name="Group 8089" transform="translate(0 0.5)">
+              <g id="shopping-cart" transform="translate(0 2)" className={color === "gray"?'fill-[#fff]':'fill-iconorange-50'}>
+                <path id="Path_8562" data-name="Path 8562" d="M3.8,6.876h6.211a.343.343,0,0,0,.33-.249l1.375-4.813a.343.343,0,0,0-.33-.438H3.011L2.765.269A.344.344,0,0,0,2.429,0H.344a.344.344,0,0,0,0,.688h1.81L3.395,6.274A1.031,1.031,0,0,0,3.8,8.251h6.211a.344.344,0,0,0,0-.688H3.8a.344.344,0,1,1,0-.688Zm0,0" transform="translate(0 0)" />
+                <path id="Path_8563" data-name="Path 8563" d="M151,361.035A1.031,1.031,0,1,0,152.031,360,1.033,1.033,0,0,0,151,361.035Zm0,0" transform="translate(-147.539 -351.753)" />
+                <path id="Path_8564" data-name="Path 8564" d="M362,361.035A1.031,1.031,0,1,0,363.035,360,1.032,1.032,0,0,0,362,361.035Zm0,0" transform="translate(-353.707 -351.753)" />
+              </g>
+              <g id="Group_8089-2" data-name="Group 8089" transform="translate(8.755)" className={color === "gray"?'fill-none stroke-iconorange-50':'fill-none stroke-[#fff]'}>
+                <circle id="Ellipse_34" data-name="Ellipse 34" cx="3.5" cy="3.5" r="3.5" className={color === "gray"?'fill-[#fff] stroke-iconorange-50':'fill-iconorange-50 stroke-[#fff]'} strokeWidth="1"/>
+                <line id="Line_32" data-name="Line 32" y2="2" transform="translate(3.5 2.5)" strokeLinecap="round" strokeWidth="1"/>
+                <line id="Line_33" data-name="Line 33" x1="2" transform="translate(2.5 3.5)" strokeLinecap="round" strokeWidth="1"/>
+              </g>
+            </g>
+          </svg>
+        </span>
+      );
+      break;
     default:
       content = <span></span>;
       break;
