@@ -1,5 +1,5 @@
 import React from "react";
-import Icons from '../components/Icons/Icons'
+import Icons from '../Icons/Icons'
 
 const OffersItem = (props) => {
     const { title, image, subtitle, rate, product } = props;

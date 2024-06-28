@@ -3,14 +3,14 @@ import Icons from '../../components/Icons/Icons'
 
 const DessertItem = (props) => {
     const { title, image, subtitle, rate } = props;
-
+console.log(image)
     return (
-        <div className="relative pt-[2px] ">
-            <div className="flex flex-col bg-no-repeat bg-cover  "
+        <div className=" relative pt-[2px] ">
+            <div className="flex flex-col bg-no-repeat bg-cover "
             // style={{ backgroundImage: `url(${image})` }}
             >
                 <img src={image} alt="" />
-                <div className="flex px-[21px]" style={{ position: 'absolute', bottom: '32px' }}>
+                <div className="flex px-[21px] pb-[6px]" style={{ position: 'absolute', bottom: '32px' }}>
                     <p className="text-white font-bold text-[18px] ">{title}</p>
                 </div>
                 <div className="flex px-[21px] gap-2" style={{ position: 'absolute', bottom: '15px' }}>
