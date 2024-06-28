@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
-import SearchBar from "../../components/Search/SearchBar";
-import Icons from '../../components/Icons/Icons'
+import SearchBar from "../../components/TextField/SearchTextField";
+
 import MenuItem from '../../components/Menu/menuItem'
 import Navbar from '../../components/Navbar/Navbar';
 
@@ -14,10 +14,10 @@ const Menu = () => {
 
   return (
     <div className="relative ">
-      <div className='pr-[21px]'>
+      <div className='px-[21px]'>
         <Navbar text="Menu" shop="true" />
       </div>
-      <div className="flex  flex-col py-[32px] px-[21px]">
+      <div className="flex flex-col py-[32px] px-[21px]">
         <SearchBar placeholder=" Search Food" />
       </div>
 

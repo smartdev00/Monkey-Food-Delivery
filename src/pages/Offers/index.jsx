@@ -5,11 +5,11 @@ import Footer from "../../components/Footer/Footer";
 import Icons from "../../components/Icons/Icons";
 import Check from "../../components/Buttons/FilledButton";
 
-import OfferList from "./OfferList";
+import OfferList from "../../components/Offers/OfferList";
 
 const Offer = () => {
   return (
-    <div className="  relative ">
+    <div className="relative ">
       <div className="px-[22px] ">
         <Navbar text="Latest Offers" shop="true" />
       </div>
