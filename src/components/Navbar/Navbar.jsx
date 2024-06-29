@@ -19,13 +19,13 @@ const Navbar = (props) => {
         ) : (
           ""
         )}
-        <span className="text-2xl text-primary font-semibold">
+        <span className="text-2xl text-primary font-semibold capitalize">
           {props.text}
         </span>
       </div>
 
       {shop ? (
-        <div className="hover:cursor-pointer" onClick={() => navigate("/order")}>
+        <div className="hover:cursor-pointer" onClick={() => navigate("/more/order")}>
           <Icons type="shopping-cart" color="gray" />{" "}
         </div>
       ) : (

@@ -31,6 +31,18 @@ const ButtonShow = () => {
             <MapCurrentTarget  top="600px" left="200px"/><br/>
             <p>Map Mannual: Yon can change the position of these components by using top, left props.</p> */}
             <RadioButton/>
+            <RadioButton/>
+            <div className='w-[100%] flex flex-col justify-center items-center gap-2'>
+                <div className='flex items-center justify-center gap-2 text-main  '>
+                    <p className=' text-3xl'>Football</p>
+                    <input type='radio' name='a' className='h-[50px] w-[50px] checked:border-main'/>
+                </div>
+                <div className='flex items-center justify-center gap-2 text-main'>
+                    <p className=' text-3xl'>Basketball</p>
+                    <input type='radio' name='a' className='h-[50px] w-[50px] checked:border-main'/>
+                </div>
+            </div>
+            
         </div>
     );
 }

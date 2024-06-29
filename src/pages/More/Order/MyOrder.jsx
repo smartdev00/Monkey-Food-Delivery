@@ -10,7 +10,7 @@ const MyOrder = () => {
   return (
     <div className="relative h-[802px]">
       <div className="px-[21px]">
-        <Navbar text="My Order" back="true" />
+        <Navbar text="My order" back="true" />
       </div>
       <div className="flex gap-[17px] px-[21px] py-[27px]">
         <img src={KingBurgers} />

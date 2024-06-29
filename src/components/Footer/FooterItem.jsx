@@ -8,7 +8,7 @@ const FooterItem = (props) => {
   const [path, setPath] = useState("");
 
   useEffect(() => {
-    setPath(window.location.pathname.split("/")[1]);
+    setPath(window.location.pathname.split("/")[1].toLocaleLowerCase());
   }, []);
 
   return (
@@ -19,7 +19,7 @@ const FooterItem = (props) => {
       />
       <span
         className="text-xs text-placeholder"
-        style={{ color: path === toGo ? "#fc6011" : "" }}
+        style={{ color: path === toGo.split("/")[1].toLocaleLowerCase() ? "#fc6011" : "" }}
       >
         {name}
       </span>

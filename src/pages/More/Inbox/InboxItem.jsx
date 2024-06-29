@@ -9,7 +9,7 @@ const InboxItem = (props) => {
       <div className="border-[5px] border-[#ee5a30] rounded-[100%] mt-1" />
       <div className="flex flex-col basis-[90%] gap-1">
         <p className="text-sm text-primary">{title}</p>
-        <p className="text-sm text-placeholder h-[20px] overflow-hidden">
+        <p className="text-sm text-placeholder line-clamp-1">
           {content}
         </p>
       </div>

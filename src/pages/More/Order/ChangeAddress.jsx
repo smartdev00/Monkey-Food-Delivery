@@ -8,7 +8,7 @@ import MapCurrentTarget from "../../../components/map/MapCurrentTarget";
 
 const ChangeAddress = () => {
   return (
-    <div className="relative flex flex-col items-center h-[790px]">
+    <div className="relative flex flex-col items-center h-[738px]">
       <div className="px-[21px] pb-[44px] w-[100%]">
         <Navbar back="true" text="Change Address" />
       </div>

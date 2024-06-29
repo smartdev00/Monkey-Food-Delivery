@@ -31,7 +31,7 @@ const Profile = () => {
   };
 
   return (
-    <div className="relative h-[996px]">
+    <div className="relative h-[944px]">
       <div className="px-[21px]">
         <Navbar text="Profile" shop="true" />
         <div className="flex flex-col justify-center items-center mb-[47px] mt-[30px]">
