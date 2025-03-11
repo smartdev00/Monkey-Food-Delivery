@@ -17,7 +17,7 @@ const ButtonShow = () => {
         setText(value)
     }
     return (
-        <div>
+        <div className='relative bg-primary'>
             {/* <BorderButton>Border Button</BorderButton>
             <FilledButton>Filled Button</FilledButton>
             <p>Border & Filled Button Mannual: Yon can pass button click handle by using onClick props. And the way of naming the button name is same as the general way.</p><br/>
@@ -30,8 +30,8 @@ const ButtonShow = () => {
             <MapCurrentPoint top="600px"/>
             <MapCurrentTarget  top="600px" left="200px"/><br/>
             <p>Map Mannual: Yon can change the position of these components by using top, left props.</p> */}
-            <RadioButton/>
-            <RadioButton/>
+            <RadioButton name="a"/>
+            <RadioButton name="a"/>
             <div className='w-[100%] flex flex-col justify-center items-center gap-2'>
                 <div className='flex items-center justify-center gap-2 text-main  '>
                     <p className=' text-3xl'>Football</p>
@@ -42,7 +42,7 @@ const ButtonShow = () => {
                     <input type='radio' name='a' className='h-[50px] w-[50px] checked:border-main'/>
                 </div>
             </div>
-            
+            <div className='absolute pt-[50px] pb-[10px] pointer-events-none flex items-center justify-center w-[100%] bottom-0 bg-gradient-to-t from-primary'><button>asdf</button></div>
         </div>
     );
 }
