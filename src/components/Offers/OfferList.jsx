@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-
-import OfferItem from './offersItem'
+import OfferItem from './OffersItem.jsx'
 
 import CafeImage from '../../../public/assets/img/offers/cafe.png'
 import IssoImage from '../../../public/assets/img/offers/isso.png'
